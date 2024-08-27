@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GAMISHOPI - Odesílací formulář</title>
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSYFHDF0EW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BSYFHDF0EW');
+</script>
+</head>
+
+<body class="bg-white text-light">
+  <header>
+    <nav class="navbar bg-light navbar-expand-sm border-bottom">
+      <div class="container-xxl">
+        <a href="index.html" class="navbar-brand w-100 order-md-0 mx-auto">
+          <div class="container d-sm-none w-100">
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-light"><i class="bi bi-person-fill"></i></button>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img loading="lazy" src="recources/Logos/goodgames-logo.png" alt="Logo" height="40">
+                </div>
+              </div>
+              <div class="col d-flex flex-col-reverse">
+                <div class="btn-group ms-auto" role="group">
+                  <button class="btn btn-light"><i class="bi bi-bag-fill">
+                      <span
+                        class="position-absolute top-100 start-0 translate-middle badge bg-success border border-light rounded-pill">
+                        <span class="">1</span>
+                      </span>
+                    </i>
+                  </button>
+                  <button class="btn btn-dark" role="button" id="darkSwitch"><i></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container d-none d-sm-block mx-auto">
+            <img loading="lazy" src="recources/Logos/goodgames-logo.png" alt="Logo" height="40">
+          </div>
+        </a>
+        <div class="navbar mx-auto w-100">
+          <div class="input input-group text-dark">
+            <input type="search" name="searchbar1" id="searchbar1" class="form-control" placeholder="Hledat" />
+            <button class="btn bg-my-gradient text-light d-sm-none"><i class="bi bi-search"></i></button>
+            <button class="btn bg-my-gradient text-light d-none d-sm-block rounded-end"><i
+                class="bi bi-search"></i></button>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions">
+              <span class="nav-link bi bi-three-dots"></span>
+            </button>
+          </div>
+        </div>
+        <div class="navbar mx-auto w-100 d-none d-sm-block text-end">
+          <div class="btn-group ms-auto" role="group">
+            <button class="btn btn-light"><i class="bi bi-bag-fill">
+                <span
+                  class="position-absolute top-100 start-0 translate-middle badge bg-success border border-light rounded-pill">
+                  <span class="">1</span>
+                </span>
+              </i>
+            </button>
+            <button class="btn btn-light"><i class="bi bi-person-fill"></i></button>
+            <button class="btn btn-light d-sm-block d-md-none" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <span class="nav-link bi bi-three-dots"></span>
+            </button>
+            <button class="btn btn-dark" role="button" id="darkSwitch"><i></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="bg-light border-bottom d-none d-md-block">
+      <div class="container-fluid mx-auto text-center p-2">
+
+        <div class="menu">
+          <div class="btn-group" role="group" id="menu_ul">
+            <li class="btn btn-secondary"><a href="category.html" class="text-light">AKCE BLACK FRIDAY</a></li>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">PLAYSTATION</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/IJNH100501-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">PS5</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">PS4</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 rounded img-fluid my-auto"
+                            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRaxC57eZ2n3CadzXWUnv8QKQT0gcxLr0-N7j7CqOGzWL3Ri20v9wl4AFADaRIa4serveAAjLsUn__5rCqXl0EXs9zsKQqdwlSn3dwFL4MJxT_Fw9T6v7B0&usqp=CAE"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-title">PS3</h6>
+                            <p class="card-text small text-truncate-2">Příslušenství</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">XBOX</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/FDPY600301-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Xbox S</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/LAK2700301-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Xbox One</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">NINTENDO</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="recources/gamesplash/PSSW.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Nintendo Switch</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">STEAM</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li href="#" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">EXKLUZIVNÍ</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">SBĚRATELSKÉ EDICE</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">SPOLEČENSKÉ HRY</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">NOVINKY</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">MERCHANDISE</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary rounded-end" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">VÝPRODEJ</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>vyprodej</h5>
+                      <div class="card">
+                        <img loading="lazy" src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+
+      <div class="offcanvas-header bg-my-gradient">
+        <img loading="lazy" src="recources/Logos/goodgames-logo.png" class="offcanvas-title img-fluid mx-auto" style="max-width: 60%;"
+          id="offcanvasWithBothOptionsLabel">
+        <button type="button" class="btn-close text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+
+      </div>
+      <div class="offcanvas-body">
+        <h3 class="px-3 text-dark">KATEGORIE</h3>
+        <div class="list-group">
+          <a href="category.html" class="list-group-item list-group-item-action" >AKCE BLACK FRIDAY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">EXCLUZIVNÍ</a>
+          <a href="category.html" class="list-group-item list-group-item-action">PLAYSTATION</a>
+          <a href="category.html" class="list-group-item list-group-item-action">XBOX</a>
+          <a href="category.html" class="list-group-item list-group-item-action">NINTENDO</a>
+          <a href="category.html" class="list-group-item list-group-item-action">STEAM</a>
+          <a href="category.html" class="list-group-item list-group-item-action">SBĚRATELSKÉ EDICE</a>
+          <a href="category.html" class="list-group-item list-group-item-action">SPOLEČENSKÉ HRY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">NOVINKY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">MERCHANDISE</a>
+          <a href="category.html" class="list-group-item list-group-item-action">VÝPRODEJ</a>
+        </div>
+        <ul class="btn-group-vertical pb-2" hidden role="group" id="overflow"></ul>
+
+      </div>
+      <section class="d-flex justify-content-between p-4 bg-my-gradient">
+        <div class="me-5">
+          <span>Spojte se s námi na sociálních sítích</span>
+        </div>
+        <div>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-xxl text-dark border-start border-end">
+      <h1 class="pt-3 pr-3">Odesílací formulář</h1>
+      <div class="py-3">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link mx-auto text-center active" data-bs-target="#formPages" role="tab"
+              aria-selected="true" data-bs-slide-to="0">Osobní informace</a>
+            <a class="nav-item nav-link mx-auto text-center" data-bs-target="#formPages" role="tab" aria-selected="true"
+              data-bs-slide-to="1">Doprava</a>
+            <a class="nav-item nav-link mx-auto text-center" data-bs-target="#formPages" role="tab" aria-selected="true"
+              data-bs-slide-to="2">Shrnutí</a>
+          </div>
+        </nav>
+        <div class="progress" style="height: 3px;">
+          <div class="progress-bar" role="progressbar" style="width: 10%; background-color: #6351ce;"></div>
+        </div>
+        <div id="formPages" class="carousel trans-height" data-bs-interval="false">
+          <form class="well form-horizontal" action=" " method="post" id="contact_form">
+            <div class="carousel-inner">
+              <div class="carousel-item active px-5 mt-3">
+                <h2 class="fw-bold text-dark py-2">Osobní údaje</h2>
+                <div class="form-group">
+                  <!-- NAME + SURNAME INPUT -->
+                  <div class="input-group my-2">
+                    <span class="input-group-text"><i class="bi bi-person-bounding-box"></i></span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="name" placeholder="example@example.com">
+                      <label for="name">Jméno</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="surname" placeholder="example@example.com">
+                      <label for="surname">Příjmení</label>
+                    </div>
+                  </div>
+                  <!-- EMAIL INPUT-->
+                  <div class="input-group my-2">
+                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                        <path
+                          d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                      </svg></span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="email" placeholder="example@example.com">
+                      <label for="email">E-mail</label>
+                    </div>
+                  </div>
+                  <!-- PHONE INPUT-->
+                  <div class="input-group my-2">
+                    <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="phone" placeholder="(845)555-1212">
+                      <label for="phone">Telefoní číslo</label>
+                    </div>
+                  </div>
+                  <hr class="my-3">
+
+                  <div class="input-group my-2">
+                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-houses-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.51 2.51 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354L7.207 1Z" />
+                        <path
+                          d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708L8.793 2Z" />
+                      </svg></span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="city" placeholder="example@example.com">
+                      <label for="city">Město</label>
+                    </div>
+                  </div>
+                  <div class="input-group my-2">
+                    <span class="input-group-text"><i class="bi bi-mailbox2"></i></span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="address-line1" placeholder="example@example.com">
+                      <label for="address-line1">Adresa</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="address-line2" placeholder="example@example.com">
+                      <label for="address-line2">Číslo bytu (nepoviné)</label>
+                    </div>
+                  </div>
+                  <div class="input-group my-2">
+                    <span class="input-group-text"><i class="bi bi-pin-map-fill"></i></span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="zip" placeholder="example@example.com">
+                      <label for="zip">PSČ</label>
+                    </div>
+                  </div>
+                  <!-- STATE SELECTOR-->
+                  <div class="input-group my-2">
+                    <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-globe-europe-africa" viewBox="0 0 16 16">
+                        <path
+                          d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.809.809 0 0 1 1.034-.275.809.809 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34c.078.028.16.044.243.054.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.333.333 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501Z" />
+                      </svg></span>
+                    <div class="form-floating">
+                      <select class="form-select" id="countrySelect" type="Country">
+                        <option selected hidden>Kliknout na menu pro zvolení</option>
+                        <optgroup id="country-optgroup-Africa" label="Africa">
+                          <option value="DZ" label="Algeria">Algeria</option>
+                          <option value="AO" label="Angola">Angola</option>
+                          <option value="BJ" label="Benin">Benin</option>
+                          <option value="BW" label="Botswana">Botswana</option>
+                          <option value="BF" label="Burkina Faso">Burkina Faso</option>
+                          <option value="BI" label="Burundi">Burundi</option>
+                          <option value="CM" label="Cameroon">Cameroon</option>
+                          <option value="CV" label="Cape Verde">Cape Verde</option>
+                          <option value="CF" label="Central African Republic">Central African Republic</option>
+                          <option value="TD" label="Chad">Chad</option>
+                          <option value="KM" label="Comoros">Comoros</option>
+                          <option value="CG" label="Congo - Brazzaville">Congo - Brazzaville</option>
+                          <option value="CD" label="Congo - Kinshasa">Congo - Kinshasa</option>
+                          <option value="CI" label="Côte d’Ivoire">Côte d’Ivoire</option>
+                          <option value="DJ" label="Djibouti">Djibouti</option>
+                          <option value="EG" label="Egypt">Egypt</option>
+                          <option value="GQ" label="Equatorial Guinea">Equatorial Guinea</option>
+                          <option value="ER" label="Eritrea">Eritrea</option>
+                          <option value="ET" label="Ethiopia">Ethiopia</option>
+                          <option value="GA" label="Gabon">Gabon</option>
+                          <option value="GM" label="Gambia">Gambia</option>
+                          <option value="GH" label="Ghana">Ghana</option>
+                          <option value="GN" label="Guinea">Guinea</option>
+                          <option value="GW" label="Guinea-Bissau">Guinea-Bissau</option>
+                          <option value="KE" label="Kenya">Kenya</option>
+                          <option value="LS" label="Lesotho">Lesotho</option>
+                          <option value="LR" label="Liberia">Liberia</option>
+                          <option value="LY" label="Libya">Libya</option>
+                          <option value="MG" label="Madagascar">Madagascar</option>
+                          <option value="MW" label="Malawi">Malawi</option>
+                          <option value="ML" label="Mali">Mali</option>
+                          <option value="MR" label="Mauritania">Mauritania</option>
+                          <option value="MU" label="Mauritius">Mauritius</option>
+                          <option value="YT" label="Mayotte">Mayotte</option>
+                          <option value="MA" label="Morocco">Morocco</option>
+                          <option value="MZ" label="Mozambique">Mozambique</option>
+                          <option value="NA" label="Namibia">Namibia</option>
+                          <option value="NE" label="Niger">Niger</option>
+                          <option value="NG" label="Nigeria">Nigeria</option>
+                          <option value="RW" label="Rwanda">Rwanda</option>
+                          <option value="RE" label="Réunion">Réunion</option>
+                          <option value="SH" label="Saint Helena">Saint Helena</option>
+                          <option value="SN" label="Senegal">Senegal</option>
+                          <option value="SC" label="Seychelles">Seychelles</option>
+                          <option value="SL" label="Sierra Leone">Sierra Leone</option>
+                          <option value="SO" label="Somalia">Somalia</option>
+                          <option value="ZA" label="South Africa">South Africa</option>
+                          <option value="SD" label="Sudan">Sudan</option>
+                          <option value="SZ" label="Swaziland">Swaziland</option>
+                          <option value="ST" label="São Tomé and Príncipe">São Tomé and Príncipe</option>
+                          <option value="TZ" label="Tanzania">Tanzania</option>
+                          <option value="TG" label="Togo">Togo</option>
+                          <option value="TN" label="Tunisia">Tunisia</option>
+                          <option value="UG" label="Uganda">Uganda</option>
+                          <option value="EH" label="Western Sahara">Western Sahara</option>
+                          <option value="ZM" label="Zambia">Zambia</option>
+                          <option value="ZW" label="Zimbabwe">Zimbabwe</option>
+                        </optgroup>
+                        <optgroup id="country-optgroup-Americas" label="Americas">
+                          <option value="AI" label="Anguilla">Anguilla</option>
+                          <option value="AG" label="Antigua and Barbuda">Antigua and Barbuda</option>
+                          <option value="AR" label="Argentina">Argentina</option>
+                          <option value="AW" label="Aruba">Aruba</option>
+                          <option value="BS" label="Bahamas">Bahamas</option>
+                          <option value="BB" label="Barbados">Barbados</option>
+                          <option value="BZ" label="Belize">Belize</option>
+                          <option value="BM" label="Bermuda">Bermuda</option>
+                          <option value="BO" label="Bolivia">Bolivia</option>
+                          <option value="BR" label="Brazil">Brazil</option>
+                          <option value="VG" label="British Virgin Islands">British Virgin Islands</option>
+                          <option value="CA" label="Canada">Canada</option>
+                          <option value="KY" label="Cayman Islands">Cayman Islands</option>
+                          <option value="CL" label="Chile">Chile</option>
+                          <option value="CO" label="Colombia">Colombia</option>
+                          <option value="CR" label="Costa Rica">Costa Rica</option>
+                          <option value="CU" label="Cuba">Cuba</option>
+                          <option value="DM" label="Dominica">Dominica</option>
+                          <option value="DO" label="Dominican Republic">Dominican Republic</option>
+                          <option value="EC" label="Ecuador">Ecuador</option>
+                          <option value="SV" label="El Salvador">El Salvador</option>
+                          <option value="FK" label="Falkland Islands">Falkland Islands</option>
+                          <option value="GF" label="French Guiana">French Guiana</option>
+                          <option value="GL" label="Greenland">Greenland</option>
+                          <option value="GD" label="Grenada">Grenada</option>
+                          <option value="GP" label="Guadeloupe">Guadeloupe</option>
+                          <option value="GT" label="Guatemala">Guatemala</option>
+                          <option value="GY" label="Guyana">Guyana</option>
+                          <option value="HT" label="Haiti">Haiti</option>
+                          <option value="HN" label="Honduras">Honduras</option>
+                          <option value="JM" label="Jamaica">Jamaica</option>
+                          <option value="MQ" label="Martinique">Martinique</option>
+                          <option value="MX" label="Mexico">Mexico</option>
+                          <option value="MS" label="Montserrat">Montserrat</option>
+                          <option value="AN" label="Netherlands Antilles">Netherlands Antilles</option>
+                          <option value="NI" label="Nicaragua">Nicaragua</option>
+                          <option value="PA" label="Panama">Panama</option>
+                          <option value="PY" label="Paraguay">Paraguay</option>
+                          <option value="PE" label="Peru">Peru</option>
+                          <option value="PR" label="Puerto Rico">Puerto Rico</option>
+                          <option value="BL" label="Saint Barthélemy">Saint Barthélemy</option>
+                          <option value="KN" label="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                          <option value="LC" label="Saint Lucia">Saint Lucia</option>
+                          <option value="MF" label="Saint Martin">Saint Martin</option>
+                          <option value="PM" label="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                          <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines
+                          </option>
+                          <option value="SR" label="Suriname">Suriname</option>
+                          <option value="TT" label="Trinidad and Tobago">Trinidad and Tobago</option>
+                          <option value="TC" label="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                          <option value="VI" label="U.S. Virgin Islands">U.S. Virgin Islands</option>
+                          <option value="US" label="United States">United States</option>
+                          <option value="UY" label="Uruguay">Uruguay</option>
+                          <option value="VE" label="Venezuela">Venezuela</option>
+                        </optgroup>
+                        <optgroup id="country-optgroup-Asia" label="Asia">
+                          <option value="AF" label="Afghanistan">Afghanistan</option>
+                          <option value="AM" label="Armenia">Armenia</option>
+                          <option value="AZ" label="Azerbaijan">Azerbaijan</option>
+                          <option value="BH" label="Bahrain">Bahrain</option>
+                          <option value="BD" label="Bangladesh">Bangladesh</option>
+                          <option value="BT" label="Bhutan">Bhutan</option>
+                          <option value="BN" label="Brunei">Brunei</option>
+                          <option value="KH" label="Cambodia">Cambodia</option>
+                          <option value="CN" label="China">China</option>
+                          <option value="GE" label="Georgia">Georgia</option>
+                          <option value="HK" label="Hong Kong SAR China">Hong Kong SAR China</option>
+                          <option value="IN" label="India">India</option>
+                          <option value="ID" label="Indonesia">Indonesia</option>
+                          <option value="IR" label="Iran">Iran</option>
+                          <option value="IQ" label="Iraq">Iraq</option>
+                          <option value="IL" label="Israel">Israel</option>
+                          <option value="JP" label="Japan">Japan</option>
+                          <option value="JO" label="Jordan">Jordan</option>
+                          <option value="KZ" label="Kazakhstan">Kazakhstan</option>
+                          <option value="KW" label="Kuwait">Kuwait</option>
+                          <option value="KG" label="Kyrgyzstan">Kyrgyzstan</option>
+                          <option value="LA" label="Laos">Laos</option>
+                          <option value="LB" label="Lebanon">Lebanon</option>
+                          <option value="MO" label="Macau SAR China">Macau SAR China</option>
+                          <option value="MY" label="Malaysia">Malaysia</option>
+                          <option value="MV" label="Maldives">Maldives</option>
+                          <option value="MN" label="Mongolia">Mongolia</option>
+                          <option value="MM" label="Myanmar [Burma]">Myanmar [Burma]</option>
+                          <option value="NP" label="Nepal">Nepal</option>
+                          <option value="NT" label="Neutral Zone">Neutral Zone</option>
+                          <option value="KP" label="North Korea">North Korea</option>
+                          <option value="OM" label="Oman">Oman</option>
+                          <option value="PK" label="Pakistan">Pakistan</option>
+                          <option value="PS" label="Palestinian Territories">Palestinian Territories</option>
+                          <option value="YD" label="People's Democratic Republic of Yemen">People's Democratic Republic
+                            of
+                            Yemen</option>
+                          <option value="PH" label="Philippines">Philippines</option>
+                          <option value="QA" label="Qatar">Qatar</option>
+                          <option value="SA" label="Saudi Arabia">Saudi Arabia</option>
+                          <option value="SG" label="Singapore">Singapore</option>
+                          <option value="KR" label="South Korea">South Korea</option>
+                          <option value="LK" label="Sri Lanka">Sri Lanka</option>
+                          <option value="SY" label="Syria">Syria</option>
+                          <option value="TW" label="Taiwan">Taiwan</option>
+                          <option value="TJ" label="Tajikistan">Tajikistan</option>
+                          <option value="TH" label="Thailand">Thailand</option>
+                          <option value="TL" label="Timor-Leste">Timor-Leste</option>
+                          <option value="TR" label="Turkey">Turkey</option>
+                          <option value="TM" label="Turkmenistan">Turkmenistan</option>
+                          <option value="AE" label="United Arab Emirates">United Arab Emirates</option>
+                          <option value="UZ" label="Uzbekistan">Uzbekistan</option>
+                          <option value="VN" label="Vietnam">Vietnam</option>
+                          <option value="YE" label="Yemen">Yemen</option>
+                        </optgroup>
+                        <optgroup id="country-optgroup-Europe" label="Europe">
+                          <option value="AL" label="Albania">Albania</option>
+                          <option value="AD" label="Andorra">Andorra</option>
+                          <option value="AT" label="Austria">Austria</option>
+                          <option value="BY" label="Belarus">Belarus</option>
+                          <option value="BE" label="Belgium">Belgium</option>
+                          <option value="BA" label="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                          <option value="BG" label="Bulgaria">Bulgaria</option>
+                          <option value="HR" label="Croatia">Croatia</option>
+                          <option value="CY" label="Cyprus">Cyprus</option>
+                          <option value="CZ" label="Czech Republic">Czech Republic</option>
+                          <option value="DK" label="Denmark">Denmark</option>
+                          <option value="DD" label="East Germany">East Germany</option>
+                          <option value="EE" label="Estonia">Estonia</option>
+                          <option value="FO" label="Faroe Islands">Faroe Islands</option>
+                          <option value="FI" label="Finland">Finland</option>
+                          <option value="FR" label="France">France</option>
+                          <option value="DE" label="Germany">Germany</option>
+                          <option value="GI" label="Gibraltar">Gibraltar</option>
+                          <option value="GR" label="Greece">Greece</option>
+                          <option value="GG" label="Guernsey">Guernsey</option>
+                          <option value="HU" label="Hungary">Hungary</option>
+                          <option value="IS" label="Iceland">Iceland</option>
+                          <option value="IE" label="Ireland">Ireland</option>
+                          <option value="IM" label="Isle of Man">Isle of Man</option>
+                          <option value="IT" label="Italy">Italy</option>
+                          <option value="JE" label="Jersey">Jersey</option>
+                          <option value="LV" label="Latvia">Latvia</option>
+                          <option value="LI" label="Liechtenstein">Liechtenstein</option>
+                          <option value="LT" label="Lithuania">Lithuania</option>
+                          <option value="LU" label="Luxembourg">Luxembourg</option>
+                          <option value="MK" label="Macedonia">Macedonia</option>
+                          <option value="MT" label="Malta">Malta</option>
+                          <option value="FX" label="Metropolitan France">Metropolitan France</option>
+                          <option value="MD" label="Moldova">Moldova</option>
+                          <option value="MC" label="Monaco">Monaco</option>
+                          <option value="ME" label="Montenegro">Montenegro</option>
+                          <option value="NL" label="Netherlands">Netherlands</option>
+                          <option value="NO" label="Norway">Norway</option>
+                          <option value="PL" label="Poland">Poland</option>
+                          <option value="PT" label="Portugal">Portugal</option>
+                          <option value="RO" label="Romania">Romania</option>
+                          <option value="RU" label="Russia">Russia</option>
+                          <option value="SM" label="San Marino">San Marino</option>
+                          <option value="RS" label="Serbia">Serbia</option>
+                          <option value="CS" label="Serbia and Montenegro">Serbia and Montenegro</option>
+                          <option value="SK" label="Slovakia">Slovakia</option>
+                          <option value="SI" label="Slovenia">Slovenia</option>
+                          <option value="ES" label="Spain">Spain</option>
+                          <option value="SJ" label="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                          <option value="SE" label="Sweden">Sweden</option>
+                          <option value="CH" label="Switzerland">Switzerland</option>
+                          <option value="UA" label="Ukraine">Ukraine</option>
+                          <option value="SU" label="Union of Soviet Socialist Republics">Union of Soviet Socialist
+                            Republics
+                          </option>
+                          <option value="GB" label="United Kingdom">United Kingdom</option>
+                          <option value="VA" label="Vatican City">Vatican City</option>
+                          <option value="AX" label="Åland Islands">Åland Islands</option>
+                        </optgroup>
+                        <optgroup id="country-optgroup-Oceania" label="Oceania">
+                          <option value="AS" label="American Samoa">American Samoa</option>
+                          <option value="AQ" label="Antarctica">Antarctica</option>
+                          <option value="AU" label="Australia">Australia</option>
+                          <option value="BV" label="Bouvet Island">Bouvet Island</option>
+                          <option value="IO" label="British Indian Ocean Territory">British Indian Ocean Territory
+                          </option>
+                          <option value="CX" label="Christmas Island">Christmas Island</option>
+                          <option value="CC" label="Cocos [Keeling] Islands">Cocos [Keeling] Islands</option>
+                          <option value="CK" label="Cook Islands">Cook Islands</option>
+                          <option value="FJ" label="Fiji">Fiji</option>
+                          <option value="PF" label="French Polynesia">French Polynesia</option>
+                          <option value="TF" label="French Southern Territories">French Southern Territories</option>
+                          <option value="GU" label="Guam">Guam</option>
+                          <option value="HM" label="Heard Island and McDonald Islands">Heard Island and McDonald Islands
+                          </option>
+                          <option value="KI" label="Kiribati">Kiribati</option>
+                          <option value="MH" label="Marshall Islands">Marshall Islands</option>
+                          <option value="FM" label="Micronesia">Micronesia</option>
+                          <option value="NR" label="Nauru">Nauru</option>
+                          <option value="NC" label="New Caledonia">New Caledonia</option>
+                          <option value="NZ" label="New Zealand">New Zealand</option>
+                          <option value="NU" label="Niue">Niue</option>
+                          <option value="NF" label="Norfolk Island">Norfolk Island</option>
+                          <option value="MP" label="Northern Mariana Islands">Northern Mariana Islands</option>
+                          <option value="PW" label="Palau">Palau</option>
+                          <option value="PG" label="Papua New Guinea">Papua New Guinea</option>
+                          <option value="PN" label="Pitcairn Islands">Pitcairn Islands</option>
+                          <option value="WS" label="Samoa">Samoa</option>
+                          <option value="SB" label="Solomon Islands">Solomon Islands</option>
+                          <option value="GS" label="South Georgia and the South Sandwich Islands">South Georgia and the
+                            South
+                            Sandwich Islands</option>
+                          <option value="TK" label="Tokelau">Tokelau</option>
+                          <option value="TO" label="Tonga">Tonga</option>
+                          <option value="TV" label="Tuvalu">Tuvalu</option>
+                          <option value="UM" label="U.S. Minor Outlying Islands">U.S. Minor Outlying Islands</option>
+                          <option value="VU" label="Vanuatu">Vanuatu</option>
+                          <option value="WF" label="Wallis and Futuna">Wallis and Futuna</option>
+                        </optgroup>
+                      </select>
+                      <label for="countrySelect">Stát</label>
+                    </div>
+                  </div>
+                  <!-- COMENT SECTION-->
+                  <div class="input-group my-2">
+                    <span class="input-group-text"><i class="bi bi-sticky-fill"></i></span>
+                    <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px;"></textarea>
+                      <label for="floatingTextarea2">Komentář k objednávce</label>
+                    </div>
+                  </div>
+                  <hr class="my-3">
+                  <div class="row w-1OO">
+                    <div class="col d-flex justify-content-end align-items-start px-4 mb-4 mt-1">
+                      <button class="btn btn-myred btn-lg text-light" data-bs-target="#formPages"
+                        data-bs-slide="next">Pokračovat</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item px-5 mt-3">
+                <h2 class="fw-bold text-dark py-2">Způsoby dopravy</h2>
+                <div class="accordion" id="accordionExample">
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#a1" aria-expanded="false">
+                        Zásilkovna
+                      </button>
+                    </h2>
+                    <div id="a1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="list-group radio-list-group">
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Zvolit zasilkovnu (api import)</span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#doprava-osobne" aria-expanded="false">
+                        Osobně
+                      </button>
+                    </h2>
+                    <div id="doprava-osobne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="list-group radio-list-group">
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Onjuva Village, Orupembe, Namibie</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Isisford QLD 4731, Austrálie</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Glen Aelmeir flintshire CH6 6BP, Spojené
+                                království</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">4J3V+4WQ، تسني،, Eritrea</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#doprava-fedex" aria-expanded="false">
+                        FedEX
+                      </button>
+                    </h2>
+                    <div id="doprava-fedex" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="list-group radio-list-group">
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Doprava přes noc</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Pozemní přeprava</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Mezinárodní přeprava</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Česká pošta
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="list-group radio-list-group">
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Doprava přes noc</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Pozemní přeprava</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Mezinárodní přeprava</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        PPL
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="list-group radio-list-group">
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Doprava přes noc</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Pozemní přeprava</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Mezinárodní přeprava</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        DPD
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <div class="list-group radio-list-group">
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Doprava přes noc</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Pozemní přeprava</span>
+                            </label>
+                          </div>
+                          <div class="list-group-item"><label>&nbsp;<input type="radio" name="ra1" value="1"><span
+                                class="list-group-item-text">Mezinárodní přeprava</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3">
+                <div class="list-group radio-list-group">
+                  <h2 class="fw-bold text-dark py-2">Způsoby platby</h2>
+                  <div class="list-group radio-list-group">
+                    <div class="list-group-item list-group-item">
+                      <label>&nbsp;<input type="radio" name="ra2" value="1">
+                        <span class="list-group-item-text"><i class="bi bi-credit-card-fill"></i> Platební karta</span>
+                      </label>
+                    </div>
+                    <div class="list-group-item list-group-item">
+                      <label>&nbsp;<input type="radio" name="ra2" value="1">
+                        <span class="list-group-item-text"><i class="bi bi-bank2"></i> Bankovní převod</span>
+                      </label>
+                    </div>
+                    <div class="list-group-item list-group-item">
+                      <label>&nbsp;<input type="radio" name="ra2" value="1">
+                        <span class="list-group-item-text"><i class="bi bi-cash-coin"></i> Osobně</span>
+                      </label>
+                    </div>
+                    <div class="list-group-item list-group-item">
+                      <label>&nbsp;<input type="radio" name="ra2" value="1">
+                        <span class="list-group-item-text"><i class="bi bi-currency-bitcoin"></i> Krypto</span>
+                      </label>
+                    </div>
+                    <div class="list-group-item list-group-item">
+                      <label>&nbsp;<input type="radio" name="ra2" value="1">
+                        <span class="list-group-item-text"><i class="bi bi-currency-exchange"></i> Pujčka</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-3">
+                <div class="row w-1OO">
+                  <div class="col d-flex justify-content-start align-items-start px-4 mb-4 mt-1">
+                    <button class="btn btn-myred btn-lg text-white" data-bs-target="#formPages"
+                      data-bs-slide="prev">Zpátky</button>
+                  </div>
+                  <div class="col d-flex justify-content-end align-items-start px-4 mb-4 mt-1">
+                    <button class="btn btn-myred btn-lg text-white" data-bs-target="#formPages"
+                      data-bs-slide="next">Pokračovat</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item px-5 mt-3">
+                <h2 class="fw-bold text-dark py-2">Shrnutí</h2>
+                <div class="row gx-5">
+                  <div class="col-12 col-lg-8">
+                    <div class="row">
+                      <div class="col-1 my-auto">
+                        <h6 class="pt-1">1x</h6>
+                      </div>
+                      <div class="col-10">
+                        <div class="card my-3">
+
+                          <div class="row pt-1">
+
+                            <div class="col-3 my-auto">
+                              <img loading="lazy" src="recources/gamesplash/KIRBY'S RETURN TO DREAM LAND.webp" class="img-fluid rounded-3">
+                            </div>
+                            <div class="col-6 my-auto">
+                              <h6 class="text-black">KIRBY'S RETURN TO DREAM LAND DELUXE EDITION (SWITCH)</h6>
+                            </div>
+                            <div class="col-3 my-auto">
+                              <h6 class="pt-1">1499 Kč</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-1 my-auto">
+                        <h6 class="pt-1">1x</h6>
+                      </div>
+                      <div class="col-10">
+                        <div class="card my-3">
+
+                          <div class="row pt-1">
+
+                            <div class="col-3 my-auto">
+                              <img loading="lazy" src="https://doc.jrc.cz/pic/FS1I300401-600-600.webp" class="img-fluid rounded-3">
+                            </div>
+                            <div class="col-6 my-auto">
+                              <h6 class="text-black">CALL OF DUTY: MODERN WARFARE 2 (PS5)</h6>
+                            </div>
+                            <div class="col-3 my-auto">
+                              <h6 class="pt-1">1899 Kč</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-2">
+                    <h4 class="fw-bold text-end p-4">Celkem: <span class="fw-4">3398 Kč</span></h4>
+                  </div>
+                  <hr class="my-2 d-flex d-lg-none ">
+                  <div class="col-12 col-lg-4 bg-my-gradient rounded text-light mt-3 py-5">
+                    <h5>Jméno: Papík</h5>
+                    <h5>Příjmení: Hňupík</h5>
+                    <h5>E-mail: papihnupi@yahoo.com</h5>
+                    <h5>Tel.: +420 999 999 999</h5>
+
+                    <hr class="my-2">
+                    <h5>Způsob dopravy: DPD</h5>
+                    <h5>Způsob pladby: KRYPTOO</h5>
+                    <hr class="my-2">
+
+                    <span class="row">
+                      <h5 class="col-7 text-start">Stát: Česká Republika</h5>
+                      <h5 class="col-5 text-end">Město: Kuřim</h5>
+                    </span>
+                    <span class="row">
+                      <h5 class="col-flex">Adresa: Pod Plakntonem 4</h5>
+                      <h5 class="col-flex">PSČ: 789 01</h5>
+                    </span>
+                    <h5></h5>
+                  </div>
+                </div>
+                <hr class="my-3">
+                <div class="row w-1OO">
+                  <div class="col d-flex justify-content-start align-items-start px-4 mb-4 mt-1">
+                    <button class="btn btn-myred btn-lg text-white" data-bs-target="#formPages"
+                      data-bs-slide="prev">Zpátky</button>
+                  </div>
+                  <div class="col d-flex justify-content-end align-items-start px-4 mb-4 mt-1">
+                    <a href="./index.html" class="btn btn-myred btn-lg text-white">Odeslat</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </main>
+
+
+
+
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <section class="d-flex justify-content-between p-4 bg-my-gradient">
+      <div class="me-5">
+        <span>Spojte se s námi na sociálních sítích</span>
+      </div>
+      <div>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <img loading="lazy" src="recources/Logos/goodgames-logo.png" class="img-fluid">
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Kategorie</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p>
+              <a href="#!" class="text-white">Playstation</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Xbox</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Nintendo</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Steam</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Užitečné odkazy</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p>
+              <a href="#!" class="text-white">Profil</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Košík</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Prodejny</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">About us</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Kontakt</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p><i class="bi bi-house mr-3"></i> Isisford QLD 4731, Austrálie</p>
+            <p><i class="bi bi-envelope mr-3"></i> GoodGames@yahoo.gg</p>
+            <p><i class="bi bi-phone mr-3"></i> +420 724 996 714</p>
+            <p><i class="bi bi-printer-fill mr-3"></i> +420 603 123 456</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <li class="btn btn-secondary" id="more" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+    aria-controls="offcanvasWithBothOptions" style="list-style-type: none; display: none;"><i
+      class="nav-link bi bi-three-dots"></i></li>
+  <!-- ... button for xpand in nav-->
+  <script src="js/overflow.js"></script>
+  <script src="js/ship.js"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/dark-mode-switch/dark-mode-switch.js"></script>
+  <link href="./node_modules/dark-mode-switch/dark-mode.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./styl.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-checkbox-radio-list-group-item.min.css">
+  <link href="./themes/theme.css" rel="stylesheet">
+</body>
+
+</html>

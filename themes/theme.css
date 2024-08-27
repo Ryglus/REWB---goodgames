@@ -1,0 +1,15 @@
+[data-theme="haloween"] {
+    background-image: url("./haloween/bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+[data-theme="haloween"] header {
+    background-image: url("./haloween/nav.png") !important;
+}
+[data-theme="haloween"] nav {
+    background-color: transparent !important;
+}
+[data-theme="haloween"] main > div {
+    background-color: rgba(131, 88, 187, 0.493) !important;
+}

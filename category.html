@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GAMISHOPI - Katalog</title>
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSYFHDF0EW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BSYFHDF0EW');
+</script>
+</head>
+
+<body class="bg-white text-light">
+  <header>
+    <nav class="navbar bg-light navbar-expand-sm border-bottom">
+      <div class="container-xxl">
+        <a href="index.html" class="navbar-brand w-100 order-md-0 mx-auto">
+          <div class="container d-sm-none w-100">
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-light"><i class="bi bi-person-fill"></i></button>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img loading="lazy" src="recources/Logos/goodgames-logo.png" alt="Logo" height="40px" max-width="100%">
+                </div>
+              </div>
+              <div class="col d-flex flex-col-reverse">
+                <div class="btn-group ms-auto" role="group">
+                  <button class="btn btn-light"><i class="bi bi-bag-fill">
+                      <span
+                        class="position-absolute top-100 start-0 translate-middle badge bg-success border border-light rounded-pill">
+                        <span class="">1</span>
+                      </span>
+                    </i>
+                  </button>
+                  <button class="btn btn-dark" role="button" id="darkSwitch"><i></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container d-none d-sm-block mx-auto">
+            <img loading="lazy" src="recources/Logos/goodgames-logo.png" alt="Logo" height="40px" max-width="100%">
+          </div>
+        </a>
+        <div class="navbar mx-auto w-100">
+          <div class="input input-group text-dark">
+            <input type="search" name="searchbar1" id="searchbar1" class="form-control" placeholder="Hledat" />
+            <button class="btn bg-my-gradient text-light d-sm-none"><i class="bi bi-search"></i></button>
+            <button class="btn bg-my-gradient text-light d-none d-sm-block rounded-end"><i
+                class="bi bi-search"></i></button>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions">
+              <span class="nav-link bi bi-three-dots"></span>
+            </button>
+          </div>
+        </div>
+        <div class="navbar mx-auto w-100 d-none d-sm-block text-end">
+          <div class="btn-group ms-auto" role="group">
+            <button class="btn btn-light"><i class="bi bi-bag-fill">
+                <span
+                  class="position-absolute top-100 start-0 translate-middle badge bg-success border border-light rounded-pill">
+                  <span class="">1</span>
+                </span>
+              </i>
+            </button>
+            <button class="btn btn-light"><i class="bi bi-person-fill"></i></button>
+            <button class="btn btn-light d-sm-block d-md-none" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <span class="nav-link bi bi-three-dots"></span>
+            </button>
+            <button class="btn btn-dark" role="button" id="darkSwitch"><i></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="bg-light border-bottom d-none d-md-block">
+      <div class="container-fluid mx-auto text-center p-2">
+
+        <div class="menu">
+          <div class="btn-group" role="group" id="menu_ul">
+            <li class="btn btn-secondary"><a href="category.html" class="text-light">AKCE BLACK FRIDAY</a></li>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">PLAYSTATION</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/IJNH100501-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">PS5</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">PS4</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 rounded img-fluid my-auto"
+                            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRaxC57eZ2n3CadzXWUnv8QKQT0gcxLr0-N7j7CqOGzWL3Ri20v9wl4AFADaRIa4serveAAjLsUn__5rCqXl0EXs9zsKQqdwlSn3dwFL4MJxT_Fw9T6v7B0&usqp=CAE"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-title">PS3</h6>
+                            <p class="card-text small text-truncate-2">Příslušenství</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">XBOX</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/FDPY600301-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Xbox S</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/LAK2700301-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Xbox One</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">NINTENDO</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="recources/gamesplash/PSSW.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Nintendo Switch</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">STEAM</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li href="#" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">EXKLUZIVNÍ</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">SBĚRATELSKÉ EDICE</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">SPOLEČENSKÉ HRY</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">NOVINKY</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">MERCHANDISE</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary rounded-end" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">VÝPRODEJ</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>vyprodej</h5>
+                      <div class="card">
+                        <img loading="lazy" src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+
+      <div class="offcanvas-header bg-my-gradient">
+        <img loading="lazy" src="recources/Logos/goodgames-logo.png" class="offcanvas-title img-fluid mx-auto" style="max-width: 60%;"
+          id="offcanvasWithBothOptionsLabel">
+        <button type="button" class="btn-close text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+
+      </div>
+      <div class="offcanvas-body">
+        <h3 class="px-3 text-dark">KATEGORIE</h3>
+        <div class="list-group">
+          <a href="category.html" class="list-group-item list-group-item-action" >AKCE BLACK FRIDAY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">EXCLUZIVNÍ</a>
+          <a href="category.html" class="list-group-item list-group-item-action">PLAYSTATION</a>
+          <a href="category.html" class="list-group-item list-group-item-action">XBOX</a>
+          <a href="category.html" class="list-group-item list-group-item-action active" aria-current="true">NINTENDO</a>
+          <a href="category.html" class="list-group-item list-group-item-action">STEAM</a>
+          <a href="category.html" class="list-group-item list-group-item-action">SBĚRATELSKÉ EDICE</a>
+          <a href="category.html" class="list-group-item list-group-item-action">SPOLEČENSKÉ HRY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">NOVINKY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">MERCHANDISE</a>
+          <a href="category.html" class="list-group-item list-group-item-action">VÝPRODEJ</a>
+        </div>
+        <ul class="btn-group-vertical pb-2" hidden role="group" id="overflow"></ul>
+
+      </div>
+      <section class="d-flex justify-content-between p-4 bg-my-gradient">
+        <div class="me-5">
+          <span>Spojte se s námi na sociálních sítích</span>
+        </div>
+        <div>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-xxl text-dark">
+      <h1 class="fw-semibold border-bottom p-2 text-center">Katalog</h1>
+      <div class="row" id="categoer">
+        <div class="col-12 col-lg-3 order-0 collapse show" id="collapseExample">
+          <h5 class="fw-semibold border-bottom p-2 text-center">Filtry</h5>
+          <div class="row">
+            <div class="col-6 col-lg-12">
+              <div class="input-group pt-2">
+                <input type="search" class="form-control" id="searchfilter" placeholder="Vyhledat" />
+                <button class="btn btn-myred">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+              <div class="border-bottom py-2 text-center" id="badgeselector">
+                <span class="badge bg-success" onclick="applyBadgeFilter('badge','.badge-skladem')">Skladem</span>
+                <span class="badge bg-warning" onclick="applyBadgeFilter('badge','.badge-nedostupne')">Nedostupné</span>
+                <span class="badge bg-info" onclick="applyBadgeFilter('badge','.badge-novinka')">Novinka</span>
+              </div>
+              <div class="py-2 border-bottom">
+                <button class="btn dropdown-toggle filterbutton" id="button-cena"
+                  onclick="applyTypeSort(this,'cena')">Cena</button>
+                <button class="btn dropdown-toggle filterbutton" id="button-abc"
+                  onclick="applyTypeSort(this,'abc')">Abecedně</button>
+              </div>
+            </div>
+            <div class="col-6 col-lg-12">
+              <div class="py-2 border-bottom">
+                <div class="input-group">
+                  <input type="number" class="form-control" id="rangenum1">
+                  <span class="input-group-text">-</span>
+                  <input type="number" dir="rtl" class="form-control" id="rangenum2">
+                </div>
+                <input id="priceRange" type="text" /><br />
+              </div>
+            </div>
+          </div>
+          <h6 class="fw-semibold border-bottom p-2 text-center">Aktivní filtry</h6>
+          <div>
+            <div class="border-bottom pb-2" id="activefilters">
+              <span class="badge bg-success used" id="activebadge-skladem" style="display: none;"
+                onclick="removeBadgeFilter('badge','.badge-skladem')"><span>Skladem</span><button type="button"
+                  class="btn-close" aria-label="Close"></button></span>
+              <span class="badge bg-warning used" id="activebadge-nedostupne" style="display: none;"
+                onclick="removeBadgeFilter('badge','.badge-nedostupne')"><span>Nedostupné</span><button type="button"
+                  class="btn-close" aria-label="Close"></button></span>
+              <span class="badge bg-info used" id="activebadge-novinka" style="display: none;"
+                onclick="removeBadgeFilter('badge','.badge-novinka')"><span>Novinka</span><button type="button"
+                  class="btn-close" aria-label="Close"></button></span>
+              <span class="badge bg-secondary used" id="activebadge-cena" style="display: none;"
+                onclick="removeTypeSort('cena')"><span>Cena</span><button type="button" class="btn-close"
+                  aria-label="Close"></button></span>
+              <span class="badge bg-secondary used" id="activebadge-abc" style="display: none;"
+                onclick="removeTypeSort('abc')"><span>Abecedně</span><button type="button" class="btn-close"
+                  aria-label="Close"></button></span>
+              <span class="badge bg-secondary used" id="activebadge-range" style="display: none;"
+                onclick="removeRangeFilter();"><span>123</span><button type="button" class="btn-close"
+                  aria-label="Close"></button></span>
+            </div>
+            <div class="input-group py-2">
+              <span class="input-group-text">Počet položek</span>
+              <select class="form-select" id="entries" name="select">
+                <option value="6">6</option>
+                <option value="9" selected>9</option>
+                <option value="18">18</option>
+                <option value="27">27</option>
+                <option value="36">36</option>
+                <option value="45">45</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9 order-1">
+          <div class="row m-2 border-bottom">
+            <div class="col-11">
+              <ol class="breadcrumb py-auto align-middle mb-0 pt-1 pb-1">
+                <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-fill"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="index.html">Hry</a></li>
+              </ol>
+            </div>
+            <div class="col-1 text-end d-block d-lg-none">
+              <a class="btn btn-myred me-md-2" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <i class="bi bi-funnel-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="row g-2 pb-2" id="ecomerce" data-show-default="9">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <a href="./iteminspect.html" class="stretched-link"></a>
+                <img loading="lazy" src="recources/gamesplash/deadSpace.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">DEAD SPACE (PC)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 156 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1399 Kč</span>
+                    <span class="float-end"><span class="badge bg-warning badge-nedostupne">Nedostupné</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <a href="./iteminspect.html" class="stretched-link"></a>
+                <img loading="lazy" src="recources/gamesplash/FS14.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">FARMING SIMULATOR 22: PLATINUM EDITION (PS4)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">908 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1099 Kč</span>
+                    <span class="float-end"><span class="badge bg-warning badge-nedostupne">Nedostupné</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="col-12 col-sm-9 btn btn-success btn-myred"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="col btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/FIFA 23 (PS4).webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">FIFA 23 (PS4)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 466,94 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">321 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/FEED.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">FIRE EMBLEM: ENGAGE DIVINE EDITION (SWITCH)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">2 148 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">2599 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/helloNeighbor2.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">HELLO NEIGHBOR 2 DELUXE EDITION (PS4)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 156 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1399 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/KIRBY'S RETURN TO DREAM LAND.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">KIRBY'S RETURN TO DREAM LAND DELUXE EDITION (SWITCH)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 156 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1399 Kč</span>
+                    <span class="float-end"><span class="badge bg-info badge-novinka">Novinka</span> <span
+                        class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/PSSW.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">POKÉMON SCARLET (SWITCH)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 321 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1599 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/PVSW.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">POKÉMON VIOLET (SWITCH)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 466,94 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">576 Kč</span>
+                    <span class="float-end"><span class="badge bg-warning badge-nedostupne">Nedostupné</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/STARWARSJEDI.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">STAR WARS JEDI: SURVIVOR (XSX)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 596 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1899 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="https://doc.jrc.cz/pic/6S1I300401-600-600.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">THE CALLISTO PROTOCOL DAY ONE EDITION (PS5)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 487 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1799 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="https://doc.jrc.cz/pic/11PE300401-600-600.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">GOD OF WAR RAGNAROK LAUNCH EDITION (PS5)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 487 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1799 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="https://doc.jrc.cz/pic/OE0YF00101-600-600.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">NEED FOR SPEED UNBOUND (PS5)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 569 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1899 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="card h-100">
+                <img loading="lazy" src="https://doc.jrc.cz/pic/FS1I300401-600-600.webp" class="img-fluid rounded">
+                <div class="card-body">
+                  <h5 id="entry_name" class="card-title">CALL OF DUTY: MODERN WARFARE 2 (PS5)</h5>
+                  <p class="w-100 text-truncate-4 small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Quis perferendis quisquam, vero ea qui alias ratione id voluptatum praesentium recusandae nostrum
+                    aspernatur! Perspiciatis officia consequatur reprehenderit, dolorem quidem numquam laudantium.</p>
+                  <a href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer px-2 py-1">
+                  <span class="text-muted">1 569 Kč bez DPH</span>
+                  <p class="w-100 mb-1">
+                    <span id="entry_price" class="fw-bold text-start">1899 Kč</span>
+                    <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+                  </p>
+                </div>
+                <div class="card-footer p-2">
+                  <button class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                    košíku</button>
+                  <button class="btn btn-secondary d-none d-sm-inline float-end"><i
+                      class="bi bi-bookmark-plus"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pb-2 border-bottom text-center">
+            <button id="showmore" class="btn btn-success text-light" onclick="morePage();">Zobrazit více</button>
+          </div>
+          <div class="pt-2">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link">Zpátky</a>
+              </li>
+              <li class="page-item"><a class="page-link">1</a></li>
+              <li class="page-item"><a class="page-link">2</a></li>
+              <li class="page-item"><a class="page-link">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Další</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <section class="d-flex justify-content-between p-4 bg-my-gradient">
+      <div class="me-5">
+        <span>Spojte se s námi na sociálních sítích</span>
+      </div>
+      <div>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <img loading="lazy" src="recources/Logos/goodgames-logo.png" class="img-fluid">
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Kategorie</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p>
+              <a href="#!" class="text-white">Playstation</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Xbox</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Nintendo</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Steam</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Užitečné odkazy</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p>
+              <a href="#!" class="text-white">Profil</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Košík</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Prodejny</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">About us</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Kontakt</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p><i class="bi bi-house mr-3"></i> Isisford QLD 4731, Austrálie</p>
+            <p><i class="bi bi-envelope mr-3"></i> GoodGames@yahoo.gg</p>
+            <p><i class="bi bi-phone mr-3"></i> +420 724 996 714</p>
+            <p><i class="bi bi-printer-fill mr-3"></i> +420 603 123 456</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <li class="btn btn-secondary" id="more" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+    aria-controls="offcanvasWithBothOptions" style="list-style-type: none; display: none;"><i
+      class="nav-link bi bi-three-dots"></i></li>
+  <!-- ... button for xpand in nav-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css"
+    integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/filter.js"></script>
+  <script src="js/ecomerce.js"></script>
+  <script src="js/overflow.js"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/dark-mode-switch/dark-mode-switch.js"></script>
+
+  <link href="./node_modules/dark-mode-switch/dark-mode.css" rel="stylesheet">
+  <link href="./styl.css" rel="stylesheet">
+</body>
+
+</html>

@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Eshop for pc games, GAMISHOPI, Landing page, games, game">
+  <title>GAMISHOPI - Hlavní strana</title>
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BSYFHDF0EW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BSYFHDF0EW');
+</script>
+</head>
+
+<body class="bg-white text-light">
+  <header>
+    <nav class="navbar bg-light navbar-expand-sm border-bottom">
+      <div class="container-xxl">
+        <a aria-label="odkaz" href="index.html" class="navbar-brand w-100 order-md-0 mx-auto">
+          <div class="container d-sm-none w-100">
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-light" alt="ucet"><i class="bi bi-person-fill" aria-label="Ucet"></i></button>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img loading="lazy" src="recources/Logos/goodgames-logo.png" alt="Logo" height="40,2px" width="88px">
+                </div>
+              </div>
+              <div class="col d-flex flex-col-reverse">
+                <div class="btn-group ms-auto" role="group">
+                  <button class="btn btn-light" alt="ucet"><i class="bi bi-bag-fill">
+                      <span
+                        class="position-absolute top-100 start-0 translate-middle badge bg-success border border-light rounded-pill">
+                        <span class="">1</span>
+                      </span>
+                    </i>
+                  </button>
+                  <button class="btn btn-dark" role="button" id="darkSwitch" aria-label="Lightmode"><i></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container d-none d-sm-block mx-auto">
+            <img loading="lazy" src="recources/Logos/goodgames-logo.png" alt="Logo" height="40,2px" width="88px">
+          </div>
+        </a>
+        <div class="navbar mx-auto w-100">
+          <div class="input input-group text-dark">
+            <input type="search" name="searchbar1" id="searchbar1" class="form-control" placeholder="Hledat" />
+            <button class="btn bg-my-gradient text-light d-sm-none"aria-label="Name"><i class="bi bi-search"></i></button>
+            <button class="btn bg-my-gradient text-light d-none d-sm-block rounded-end"aria-label="Name"><i
+                class="bi bi-search"></i></button>
+            <button aria-label="Name" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions">
+              <span class="nav-link bi bi-three-dots"></span>
+            </button>
+          </div>
+        </div>
+        <div class="navbar mx-auto w-100 d-none d-sm-block text-end">
+          <div class="btn-group ms-auto" role="group">
+            <button class="btn btn-light"><i class="bi bi-bag-fill">
+                <span
+                  class="position-absolute top-100 start-0 translate-middle badge bg-success border border-light rounded-pill">
+                  <span class="">1</span>
+                </span>
+              </i>
+            </button>
+            <button aria-label="Name" class="btn btn-light"><i class="bi bi-person-fill"></i></button>
+            <button aria-label="Name" class="btn btn-light d-sm-block d-md-none" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <span class="nav-link bi bi-three-dots"></span>
+            </button>
+            <button aria-label="Name" class="btn btn-dark" role="button" id="darkSwitch"><i></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="bg-light border-bottom d-none d-md-block">
+      <div class="container-fluid mx-auto text-center p-2">
+
+        <div class="menu">
+          <div class="btn-group" role="group" id="menu_ul">
+            <li class="btn btn-secondary"><a aria-label="odkaz"href="category.html" class="text-light">AKCE BLACK FRIDAY</a></li>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">PLAYSTATION</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="./recources/Images/ps5.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">PS5</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a aria-label="odkaz"href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">PS4</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a aria-label="odkaz"href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 rounded img-fluid my-auto"
+                            src="./recources/Images/ps3.webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-title">PS3</h6>
+                            <p class="card-text small text-truncate-2">Příslušenství</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">XBOX</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img alt="the cover of the game forza horizon 5" loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/forza.webp">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Xbox S</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a aria-label="odkaz"href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="recources/gamesplash/FIFA 23 (PS4).webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Xbox One</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">NINTENDO</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded " src="recources/gamesplash/PSSW.webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Nintendo Switch</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">STEAM</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="./recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li href="#" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">EXKLUZIVNÍ</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">SBĚRATELSKÉ EDICE</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">SPOLEČENSKÉ HRY</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">NOVINKY</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">MERCHANDISE</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a aria-label="odkaz"href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary rounded-end" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">VÝPRODEJ</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>vyprodej</h5>
+                      <div class="card">
+                        <img loading="lazy" src="recources/gamesplash/FIFA 23 (PS4).webp" class="img-fluid" alt="image">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+
+      <div class="offcanvas-header bg-my-gradient">
+        <img loading="lazy" alt="logo" src="recources/Logos/goodgames-logo.png" class="offcanvas-title img-fluid mx-auto" style="max-width: 60%;" id="offcanvasWithBothOptionsLabel">
+        <button type="button" aria-label="Name" class="btn-close text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+
+      </div>
+      <div class="offcanvas-body">
+        <h3 class="px-3 text-dark">KATEGORIE</h3>
+        <div class="list-group">
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">AKCE BLACK FRIDAY</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">EXCLUZIVNÍ</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">PLAYSTATION</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">XBOX</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">NINTENDO</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">STEAM</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">SBĚRATELSKÉ EDICE</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">SPOLEČENSKÉ HRY</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">NOVINKY</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action">MERCHANDISE</a>
+          <a aria-label="odkaz"href="category.html" class="list-group-item list-group-item-action" aria-current="true">VÝPRODEJ</a>
+        </div>
+        <ul class="btn-group-vertical pb-2" hidden role="group" id="overflow"></ul>
+
+      </div>
+      <section class="d-flex justify-content-between p-4 bg-my-gradient">
+        <div class="me-5">
+          <span>Spojte se s námi na sociálních sítích</span>
+        </div>
+        <div>
+          <a aria-label="odkaz" href="index.html" class="text-white text-decoration-none me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a aria-label="odkaz" href="index.html" class="text-white text-decoration-none me-3">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a aria-label="odkaz" href="index.html" class="text-white text-decoration-none me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-xxl text-dark">
+      <div class="py-3 mx-0 px-0">
+        <h1 class="hidetitle">Hlavní Strana</h1>
+        <div id="mainCarousel" class="carousel slide px-1">
+          <div class="row mx-0">
+            <div class="col-md-9 mx-0 px-0">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="recources/Images/Picture.webp"
+                    class="w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="recources/Images/Picture-2.webp"
+                    class="w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="recources/Images/Picture-3.webp"
+                    class="w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="recources/Images/Picture-4.webp"
+                    class="w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="recources/Images/Picture-5.webp"
+                    class="w-100 rounded" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="recources/Images/Picture-6.webp"
+                    class="w-100 rounded" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 px-0" id="result">
+              <menu>
+              <ul class="row-1">
+                <div class="col">
+                  <li data-bs-target="#mainCarousel" class="progress active-p" data-bs-slide-to="0"
+                    style="height: 20px">
+                    <h6 class="text-center position-absolute px-2 py-auto">Herní Vánoce</h6>
+                    <div class="progress-bar translate-start" id="blips"></div>
+                  </li>
+                </div>
+                <div class="col">
+                  <li data-bs-target="#mainCarousel" class="progress" data-bs-slide-to="1" style="height: 20px">
+                    <h6 class="text-center position-absolute px-2 py-auto">PlayStation Vánoce
+                    </h6>
+                  </li>
+                </div>
+                <div class="col">
+                  <li data-bs-target="#mainCarousel" class="progress" data-bs-slide-to="2" style="height: 20px">
+                    <h6 class="text-center position-absolute px-2 py-auto">Playstation 5 skladem!
+                    </h6>
+                  </li>
+                </div>
+                <div class="col">
+                  <li data-bs-target="#mainCarousel" class="progress" data-bs-slide-to="3" style="height: 20px">
+                    <h6 class="text-center position-absolute px-2 py-auto">Xbox Series S skladem!
+                    </h6>
+                  </li>
+                </div>
+                <div class="col">
+                  <li data-bs-target="#mainCarousel" class="progress" data-bs-slide-to="4" style="height: 20px">
+                    <h6 class="text-center position-absolute px-2 py-auto">Playstation PLUS</h6>
+                  </li>
+                </div>
+                <div class="col">
+                  <li data-bs-target="#mainCarousel" class="progress" data-bs-slide-to="5" style="height: 20px">
+                    <h6 class="text-center position-absolute px-2 py-auto">Nintendo vánoční slevy
+                    </h6>
+                  </li>
+                </div>
+              </ul>
+            </menu>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid border-bottom px-0">
+        <h2 class="border-bottom text-center py-3">Novinky</h2>
+        <div class="row">
+          <div class="col-12 col-lg-2 px-1 py-2">
+            <div class="bg-my-gradient rounded h-100 w-100">
+              <div class="text-center d-block align-items-center justify-content-center">
+                <div class="text-light px-2 py-2">
+                  <hr class="py-4 d-none d-lg-block">
+                  <h4 class="pt-2">NEWSLETTER</h4>
+                  <h6 class="pt-1">Zjísti vždy o nejnovějších akcích, slevách a soutěžích</h6>
+                  <input type="email" class="form-control text-center pt-1"
+                    style="max-width: 380px; text-align: center; margin: 0 auto;" placeholder="example@exaple.cz">
+                  <input type="submit" class="form-control btn btn-success border-light my-1"
+                    style="max-width: 380px; text-align: center; margin: 0 auto;" value="Přihlásit">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-10 px-1">
+            <div class="owl-carousel viewcarousel">
+              <div class="d-flex">
+                <div class="card h-100">
+                  <img loading="lazy" src="recources/gamesplash/helloNeighbor2.webp" class="img-fluid rounded" alt="image">
+                  <div class="card-body h-100">
+                    <h5 class="card-title h-100 text-truncate-2">HELLO NEIGHBOR 2 DELUXE EDITION (PS4)</h5>
+                    <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+                  </div>
+                  <div class="card-footer px-2 py-1">
+                    <span class="text-muted">1 156 Kč bez DPH</span>
+                    <p class="w-100 mb-1">
+                      <span id="entry_price" class="fw-bold text-start">1399 Kč</span>
+                      <span class="float-end"><span class="badge bg-info badge-novinka">Novinka</span></span>
+                    </p>
+                  </div>
+                  <div class="card-footer p-2">
+                    <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9" onclick="location.href=('cart.html');"><i
+                        class="bi bi-cart-plus"></i> Do
+                      košíku</button>
+
+                    <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                        class="bi bi-bookmark-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="card h-100">
+                  <img loading="lazy" src="recources/gamesplash/deadSpace.webp" class="img-fluid rounded" alt="image">
+                  <div class="card-body h-100">
+                    <h5 class="card-title text-truncate-2" style="min-height: 48px;">DEAD SPACE (PC)</h5>
+                    <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+                  </div>
+                  <div class="card-footer px-2 py-1">
+                    <span class="text-muted">1 156 Kč bez DPH</span>
+                    <p class="w-100 mb-1">
+                      <span id="entry_price" class="fw-bold text-start">1399 Kč</span>
+                      <span class="float-end"><span class="badge bg-info badge-novinka">Novinka</span></span>
+                    </p>
+                  </div>
+                  <div class="card-footer p-2">
+                    <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9" onclick="location.href=('cart.html');"><i
+                        class="bi bi-cart-plus"></i> Do
+                      košíku</button>
+                    <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                        class="bi bi-bookmark-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="card h-100">
+                  <img loading="lazy" src="recources/gamesplash/KIRBY'S RETURN TO DREAM LAND.webp" class="img-fluid rounded" alt="image">
+                  <div class="card-body">
+                    <h5 class="card-title text-truncate-2">KIRBY'S RETURN TO DREAM LAND DELUXE EDITION (SWITCH)</h5>
+                    <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+                  </div>
+                  <div class="card-footer px-2 py-1">
+                    <span class="text-muted">1 156 Kč bez DPH</span>
+                    <p class="w-100 mb-1">
+                      <span id="entry_price" class="fw-bold text-start">1399 Kč</span>
+                      <span class="float-end"><span class="badge bg-info badge-novinka">Novinka</span></span>
+                    </p>
+                  </div>
+                  <div class="card-footer p-2">
+                    <a aria-label="odkaz"href="cart.html" class="btn btn-primary btn-myred col-12 col-sm-9"><i
+                        class="bi bi-cart-plus"></i>
+                      Do
+                      košíku</a>
+                    <a aria-label="odkaz" href="#" class="btn btn-secondary d-none d-sm-inline float-end"><i class="bi bi-bookmark-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="card h-100">
+                  <img loading="lazy" src="recources/gamesplash/STARWARSJEDI.webp" class="img-fluid rounded" alt="image">
+                  <div class="card-body h-100">
+                    <h5 class="card-title text-truncate-2">STAR WARS JEDI: SURVIVOR (XSX)</h5>
+                    <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+                  </div>
+                  <div class="card-footer px-2 py-1">
+                    <span class="text-muted">1 569 Kč bez DPH</span>
+                    <p class="w-100 mb-1">
+                      <span id="entry_price" class="fw-bold text-start">1899 Kč</span>
+                      <span class="float-end"><span class="badge bg-info badge-novinka">Novinka</span></span>
+                    </p>
+                  </div>
+                  <div class="card-footer p-2">
+                    <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9" onclick="location.href=('cart.html');"><i
+                        class="bi bi-cart-plus"></i> Do
+                      košíku</button>
+                    <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                        class="bi bi-bookmark-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="card h-100">
+                  <img loading="lazy" src="recources/gamesplash/FEED.webp" class="img-fluid rounded" alt="image">
+                  <div class="card-body h-100">
+                    <h5 class="card-title text-truncate-2">FIRE EMBLEM: ENGAGE DIVINE EDITION (SWITCH)</h5>
+                    <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+                  </div>
+                  <div class="card-footer px-2 py-1">
+                    <span class="text-muted">2 148 Kč bez DPH</span>
+                    <p class="w-100 mb-1">
+                      <span id="entry_price" class="fw-bold text-start">2599 Kč</span>
+                      <span class="float-end"><span class="badge bg-info badge-novinka">Novinka</span></span>
+                    </p>
+                  </div>
+                  <div class="card-footer p-2">
+                    <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9" onclick="location.href=('cart.html');"><i
+                        class="bi bi-cart-plus"></i> Do
+                      košíku</button>
+                    <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                        class="bi bi-bookmark-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-my-gradient border-bottom rounded my-3">
+        <h2 class="text-center mb-0 py-3 text-light">Proč nakupovat u nás?</h2>
+        <div class="row text-center ">
+          <div class="col-12 col-md-6 col-lg-3 rounded py-4 shadow my-hover"><a aria-label="odkaz"href="#"
+              class="text-decoration-none text-dark"> <span> <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path
+                    d="M11.666 0A8.666 8.666 0 003 8.667c0 3.743 5.301 11.824 7.611 14.813a1.333 1.333 0 002.111 0c2.31-2.989 7.611-11.07 7.611-14.813A8.666 8.666 0 0011.666 0zm0 21.56C8.722 17.576 5 11.168 5 8.666a6.667 6.667 0 1113.333 0c.003 2.501-3.723 8.91-6.666 12.893z"
+                    fill="#ffff"></path>
+                  <path
+                    d="M11.666 4.135a4.532 4.532 0 10.002 9.063 4.532 4.532 0 00-.002-9.063zm0 7.064a2.532 2.532 0 110-5.065 2.532 2.532 0 010 5.065z"
+                    fill="#ffff"></path>
+                </svg> </span>
+              <h4 class="text-light">Osobní odběr na celé planetě</h4>
+            </a></div>
+          <div class="col-12 col-md-6 col-lg-3 rounded pt-4 shadow my-hover"><a aria-label="odkaz"href="#"
+              class="text-decoration-none text-dark"> <span> <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path
+                    d="M19.268 7.437a7.436 7.436 0 10-14.872.001 7.436 7.436 0 0014.872-.001zm-7.436-5.408a5.4 5.4 0 015.08 3.616c-3.825-.426-5.565-2.256-6.3-3.465.4-.097.809-.148 1.22-.151zm-3.085.975c.226.402.486.783.776 1.141-1.386 1.078-2.289 1.073-2.588 1.026a5.443 5.443 0 011.812-2.167zm3.085 9.841a5.416 5.416 0 01-5.41-5.409c0-.1.025-.193.03-.292.234.05.472.076.71.075A6.134 6.134 0 0011 5.56a11.41 11.41 0 006.21 2.153 5.4 5.4 0 01-5.378 5.132zM18.872 16.712a9.83 9.83 0 01-3.774-1.331 1.015 1.015 0 00-1.125 1.689c1.374.845 2.905 1.4 4.5 1.632 2.4.478 3.497.696 3.497 4.283a1.014 1.014 0 002.025 0c.007-5.25-2.6-5.77-5.123-6.273zM8.903 15.383a9.85 9.85 0 01-3.774 1.33C2.607 17.216 0 17.737 0 22.987a1.014 1.014 0 002.025 0c0-3.587 1.097-3.806 3.496-4.284a11.841 11.841 0 004.5-1.631 1.014 1.014 0 00-1.125-1.69h.007z"
+                    fill="#ffff"></path>
+                </svg> </span>
+              <h4 class="text-light">Rozumíme vám i&nbsp;hrám</h4>
+            </a></div>
+          <div class="col-12 col-md-6 col-lg-3 rounded pt-4 shadow my-hover"><a aria-label="odkaz"href="#"
+              class="text-decoration-none text-dark"> <span> <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path
+                    d="M8.967 22.062a1.007 1.007 0 01-.713-.297L.295 13.807a1.01 1.01 0 010-1.425L4.07 8.61a1.007 1.007 0 011.425 0l3.47 3.47 9.536-9.535a1.01 1.01 0 011.425 0l3.773 3.774a1.006 1.006 0 010 1.425L9.674 21.768a1.002 1.002 0 01-.707.294zm-6.53-8.968l6.53 6.532L21.563 7.03l-2.347-2.347-9.533 9.536a1.01 1.01 0 01-1.425 0l-3.47-3.472-2.351 2.347z"
+                    fill="#ffff"></path>
+                </svg> </span>
+              <h4 class="text-light">Garantujeme vždy skvělou cenu</h4>
+            </a></div>
+          <div class="col-12 col-md-6 col-lg-3 rounded pt-4 shadow my-hover"><a aria-label="odkaz"href="#"
+              class="text-decoration-none text-dark"> <span> <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 7.417h7a1 1 0 011 .999v5.868a.975.975 0 01-.084.4l-2.667 6.133a.996.996 0 01-.916.6H8a1.334 1.334 0 01-1.333 1.334H1.333A1.334 1.334 0 010 21.417V8.75a1.333 1.333 0 011.333-1.333h5.334A1.334 1.334 0 018 8.75v.185l6.217-7.807A1 1 0 0116 1.751v5.666zM2 20.75h4V9.417H2V20.75zm17.674-1.334l2.325-5.34-.002-4.662h-7a1 1 0 01-1-1V4.607l-6 7.534v7.275h11.677zm-15.98-1.955h.612c.383 0 .694.31.694.694v.612c0 .383-.31.694-.694.694h-.611A.695.695 0 013 18.767v-.612c0-.383.31-.694.695-.694z"
+                    fill="#ffff"></path>
+                </svg> </span>
+              <h4 class="text-light">Reklamace do 1&nbsp;000&nbsp;Kč vyřídíme obratem</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-my-gradient border-bottom rounded my-3 py-2">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <h2 class="text-center mb-0 py-4 text-light">Doporučujeme!</h2>
+            <div class="owl-carousel pt-0 mt-0" id="zhavinkacarousel">
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/FIFA 23 (PS4).webp" class="img-fluid rounded" alt="image">
+                <div class="card-body">
+                  <h5 class="card-title" style="min-height: 48px;">FIFA 23 (PS4)</h5>
+                  <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer p-2">
+                  <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9 w-100"><i
+                      class="bi bi-box-arrow-up-right"></i> Navštívit</button>
+                </div>
+              </div>
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/PS200.webp" class="img-fluid rounded" alt="image">
+                <div class="card-body">
+                  <h5 class="card-title text-truncate-2">PLAYSTATION STORE - DÁRKOVÁ KARTA 200 KČ (DIGITÁLNÍ VERZE)</h5>
+                  <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer p-2">
+                  <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9 w-100"><i
+                      class="bi bi-box-arrow-up-right"></i> Navštívit</button>
+                </div>
+              </div>
+              <div class="card h-100">
+                <img loading="lazy" src="recources/gamesplash/PVSW.webp" class="img-fluid rounded" alt="image">
+                <div class="card-body">
+                  <h5 class="card-title text-truncate-2" style="min-height: 48px;">POKÉMON VIOLET (SWITCH)</h5>
+                  <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+                </div>
+                <div class="card-footer p-2">
+                  <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9 w-100"><i
+                      class="bi bi-box-arrow-up-right"></i> Navštívit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <h2 class="text-center mb-0 py-4 text-light">Dnešní žhavinka!</h2>
+            <div class="card mt-2" style="border: none;">
+              <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-5"><img
+                    src="recources/front/stray-ps4-smartcdkeys-cheap-cd-key-cover.webp" class="img-fluid rounded" alt="image">
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-7 ps-0">
+                  <h3 class="card-title px-3 pt-3">STRAY (PS4)</h3>
+                  <div class="card-body d-flex">
+
+                    <p class="text-truncate-3">Hra pro PS4 - Stray je dobrodružná hra z pohledu třetí osoby s kočičí
+                      hlavní hrdinkou, zasazená do podrobně zpracovaných, neonem prozářených uliček chátrajícího
+                      kyberměsta a potemnělých prostředí jeho sešlých zákoutí. Prolézej skrz naskrz okolí, braň se
+                      před nečekanými hrozbami a vyřeš tajemství tohoto nehostinného místa obývaného zvídavými droidy
+                      a nebezpečnými stvořeními.</p>
+
+                  </div>
+                  <div class="card-footer" style="background-color: transparent; border-top: none;">
+                    <span class="text-muted">Sleva 10 % z</span>
+                    <span class="text-muted"><del>999 Kč</del></span>
+                    <p class="w-100 mb-1">
+                    <h4 id="entry_price" class="fw-bold text-start"><u>899 Kč</u></h4>
+                    </p>
+                  </div>
+                  <div class="card-footer mt-auto" style="background-color: transparent; border-top: none;">
+                    <p class="text-end fs-4"><span>Sleva končí za: </span><span id="zhavinkaCountDown">--:--:--</span>
+                    </p>
+
+                    <div class="progress" style="height: 3px;">
+                      <div aria-label="timeout" class="progress-bar" role="progressbar" id="zhavinkaProgressBar"
+                        style="background-color: #6351ce;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container-fluid border-bottom px-0">
+        <h2 class="border-bottom text-center py-3">Doporučené</h2>
+        <div class="owl-carousel viewcarousel">
+          <div class="card h-100">
+            <img loading="lazy" src="recources/gamesplash/FIFA 23 (PS4).webp" class="img-fluid rounded" alt="image">
+            <div class="card-body">
+              <h5 class="card-title" style="min-height: 48px;">FIFA 23 (PS4)</h5>
+              <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+            </div>
+            <div class="card-footer px-2 py-1">
+              <span class="text-muted">1 032 Kč bez DPH</span>
+              <p class="w-100 mb-1">
+                <span id="entry_price" class="fw-bold text-start">1249 Kč</span>
+                <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+              </p>
+            </div>
+            <div class="card-footer p-2">
+              <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                košíku</button>
+              <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                  class="bi bi-bookmark-plus"></i></button>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img loading="lazy" src="recources/gamesplash/PS200.webp" class="img-fluid rounded" alt="image">
+            <div class="card-body">
+              <h5 class="card-title text-truncate-2">PLAYSTATION STORE - DÁRKOVÁ KARTA 200 KČ (DIGITÁLNÍ VERZE)</h5>
+              <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+            </div>
+            <div class="card-footer px-2 py-1">
+              <span class="text-muted">165 Kč bez DPH</span>
+              <p class="w-100 mb-1">
+                <span id="entry_price" class="fw-bold text-start">200 Kč</span>
+                <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+              </p>
+            </div>
+            <div class="card-footer p-2">
+              <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                košíku</button>
+              <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                  class="bi bi-bookmark-plus"></i></button>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img loading="lazy" src="recources/gamesplash/PVSW.webp" class="img-fluid rounded" alt="image">
+            <div class="card-body">
+              <h5 class="card-title text-truncate-2" style="min-height: 48px;">POKÉMON VIOLET (SWITCH)</h5>
+              <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+            </div>
+            <div class="card-footer px-2 py-1">
+              <span class="text-muted">1 321 Kč bez DPH</span>
+              <p class="w-100 mb-1">
+                <span id="entry_price" class="fw-bold text-start">1599 Kč</span>
+                <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+              </p>
+            </div>
+            <div class="card-footer p-2">
+              <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                košíku</button>
+              <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                  class="bi bi-bookmark-plus"></i></button>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img loading="lazy" src="recources/gamesplash/PSSW.webp" class="img-fluid rounded" alt="image">
+            <div class="card-body">
+              <h5 class="card-title text-truncate-2" style="min-height: 48px;">POKÉMON SCARLET (SWITCH)</h5>
+              <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+            </div>
+            <div class="card-footer px-2 py-1">
+              <span class="text-muted">1 321 Kč bez DPH</span>
+              <p class="w-100 mb-1">
+                <span id="entry_price" class="fw-bold text-start">1599 Kč</span>
+                <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+              </p>
+            </div>
+            <div class="card-footer p-2">
+              <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                košíku</button>
+              <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                  class="bi bi-bookmark-plus"></i></button>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img loading="lazy" src="recources/gamesplash/FS14.webp" class="img-fluid rounded" alt="image"> 
+            <div class="card-body">
+              <h5 class="card-title text-truncate-2" style="min-height: 48px;">FARMING SIMULATOR 22: PLATINUM EDITION
+                (PS4)</h5>
+              <a aria-label="odkaz"href="./iteminspect.html" class="stretched-link"></a>
+            </div>
+            <div class="card-footer px-2 py-1">
+              <span class="text-muted">908 Kč bez DPH</span>
+              <p class="w-100 mb-1">
+                <span id="entry_price" class="fw-bold text-start">1099 Kč</span>
+                <span class="float-end"><span class="badge bg-success badge-skladem">Skladem</span></span>
+              </p>
+            </div>
+            <div class="card-footer p-2">
+              <button aria-label="Name" class="btn btn-success btn-myred col-12 col-sm-9"><i class="bi bi-cart-plus"></i> Do
+                košíku</button>
+              <button aria-label="Name" class="btn btn-secondary d-none d-sm-inline float-end"><i
+                  class="bi bi-bookmark-plus"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <section class="d-flex justify-content-between p-4 bg-my-gradient">
+      <div class="me-5">
+        <span>Spojte se s námi na sociálních sítích</span>
+      </div>
+      <div>
+        <a aria-label="odkaz" href="index.html" class="text-white text-decoration-none me-3">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a aria-label="odkaz" href="index.html" class="text-white text-decoration-none me-3">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a aria-label="odkaz" href="index.html" class="text-white text-decoration-none me-3">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <img loading="lazy" src="recources/Logos/goodgames-logo.png" class="img-fluid" alt="image">
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Kategorie</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p>
+              <a aria-label="odkaz"href="#!" class="text-white">Playstation</a>
+            </p>
+            <p>
+              <a aria-label="odkaz"href="#!" class="text-white">Xbox</a>
+            </p>
+            <p>
+              <a aria-label="odkaz"href="#!" class="text-white">Nintendo</a>
+            </p>
+            <p>
+              <a aria-label="odkaz"href="#!" class="text-white">Steam</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Užitečné odkazy</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p>
+              <a aria-label="odkaz"href="#!" class="text-white">Profil</a>
+            </p>
+            <p>
+              <a aria-label="odkaz"href="#!" class="text-white">Košík</a>
+            </p>
+            <p>
+              <a aria-label="odkaz"href="#!" class="text-white">Prodejny</a>
+            </p>
+            <p>
+              <a aria-label="odkaz"href="#!" class="text-white">About us</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Kontakt</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p><i class="bi bi-house mr-3"></i> Isisford QLD 4731, Austrálie</p>
+            <p><i class="bi bi-envelope mr-3"></i> GoodGames@yahoo.gg</p>
+            <p><i class="bi bi-phone mr-3"></i> +420 724 996 714</p>
+            <p><i class="bi bi-printer-fill mr-3"></i> +420 603 123 456</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <li class="btn btn-secondary" id="more" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+    aria-controls="offcanvasWithBothOptions" style="list-style-type: none; display: none;"><i
+      class="nav-link bi bi-three-dots"></i></li>
+  <!-- ... button for xpand in nav-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/overflow.min.js"></script>
+  <script src="js/owl-carousel.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/dark-mode-switch/dark-mode-switch.js"></script>
+  <link href="./node_modules/dark-mode-switch/dark-mode.css" rel="stylesheet">
+  <script src="js/carousel.min.js"></script>
+  <link href="./styl.css" rel="stylesheet">
+</body>
+
+</html>

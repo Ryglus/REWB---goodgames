@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GAMISHOPI - KIRBY'S RETURN TO DREAM LAND DELUXE EDITION (SWITCH)</title>
+  <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="./bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSYFHDF0EW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-BSYFHDF0EW');
+  </script>
+</head>
+
+<body class="bg-white text-light">
+  <header>
+    <nav class="navbar bg-light navbar-expand-sm border-bottom">
+      <div class="container-xxl">
+        <a href="index.html" class="navbar-brand w-100 order-md-0 mx-auto">
+          <div class="container d-sm-none w-100">
+            <div class="row">
+              <div class="col">
+                <button class="btn btn-light"><i class="bi bi-person-fill"></i></button>
+              </div>
+              <div class="col">
+                <div class="text-center">
+                  <img loading="lazy" src="recources/Logos/goodgames-logo.png" alt="Logo" height="40">
+                </div>
+              </div>
+              <div class="col d-flex flex-col-reverse">
+                <div class="btn-group ms-auto" role="group">
+                  <button class="btn btn-light"><i class="bi bi-bag-fill">
+                      <span
+                        class="position-absolute top-100 start-0 translate-middle badge bg-success border border-light rounded-pill">
+                        <span class="">1</span>
+                      </span>
+                    </i>
+                  </button>
+                  <button class="btn btn-dark" role="button" id="darkSwitch"><i></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container d-none d-sm-block mx-auto">
+            <img loading="lazy" src="recources/Logos/goodgames-logo.png" alt="Logo" height="40">
+          </div>
+        </a>
+        <div class="navbar mx-auto w-100">
+          <div class="input input-group text-dark">
+            <input type="search" name="searchbar1" id="searchbar1" class="form-control" placeholder="Hledat" />
+            <button class="btn bg-my-gradient text-light d-sm-none"><i class="bi bi-search"></i></button>
+            <button class="btn bg-my-gradient text-light d-none d-sm-block rounded-end"><i
+                class="bi bi-search"></i></button>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+              aria-controls="offcanvasWithBothOptions">
+              <span class="nav-link bi bi-three-dots"></span>
+            </button>
+          </div>
+        </div>
+        <div class="navbar mx-auto w-100 d-none d-sm-block text-end">
+          <div class="btn-group ms-auto" role="group">
+            <button class="btn btn-light"><i class="bi bi-bag-fill">
+                <span
+                  class="position-absolute top-100 start-0 translate-middle badge bg-success border border-light rounded-pill">
+                  <span class="">1</span>
+                </span>
+              </i>
+            </button>
+            <button class="btn btn-light"><i class="bi bi-person-fill"></i></button>
+            <button class="btn btn-light d-sm-block d-md-none" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+              <span class="nav-link bi bi-three-dots"></span>
+            </button>
+            <button class="btn btn-dark" role="button" id="darkSwitch"><i></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="bg-light border-bottom d-none d-md-block">
+      <div class="container-fluid mx-auto text-center p-2">
+
+        <div class="menu">
+          <div class="btn-group" role="group" id="menu_ul">
+            <li class="btn btn-secondary"><a href="category.html" class="text-light">AKCE BLACK FRIDAY</a></li>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">PLAYSTATION</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/IJNH100501-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">PS5</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="recources/gamesplash/FIFA 23 (PS4).webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">PS4</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 rounded img-fluid my-auto"
+                            src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRaxC57eZ2n3CadzXWUnv8QKQT0gcxLr0-N7j7CqOGzWL3Ri20v9wl4AFADaRIa4serveAAjLsUn__5rCqXl0EXs9zsKQqdwlSn3dwFL4MJxT_Fw9T6v7B0&usqp=CAE"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-title">PS3</h6>
+                            <p class="card-text small text-truncate-2">Příslušenství</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">XBOX</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/FDPY600301-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Xbox S</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded "
+                            src="https://doc.jrc.cz/pic/LAK2700301-600-600.webp" alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Xbox One</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">NINTENDO</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="category.html" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded " src="recources/gamesplash/PSSW.webp"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">Nintendo Switch</h6>
+                            <p class="card-text small text-truncate-2">Hry, Konzole, Příslušenství, Předobjednávky</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">STEAM</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li href="#" class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">EXKLUZIVNÍ</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">SBĚRATELSKÉ EDICE</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">SPOLEČENSKÉ HRY</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">NOVINKY</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">MERCHANDISE</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <a href="#" class="col-3 col-md-4 col-lg-3 col-sm-6 text-decoration-none my-auto py-1">
+                      <div class="card border border-0">
+                        <div class="row">
+                          <img loading="lazy" class="col-5 img-fluid my-auto rounded" src="https://via.placeholder.com/320x180"
+                            alt="image">
+                          <div class="col-7 card-body my-auto">
+                            <h6 class="card-text">neco</h6>
+                            <p class="card-text small text-truncate-2">Lorem ipsum dolor sit amet consectetur
+                              adipisicing elit. Quasi suscipit ex blanditiis doloremque excepturi animi incidunt,
+                              aspernatur nesciunt ipsa, hic assumenda totam earum repudiandae ullam consequuntur numquam
+                              aliquid in pariatur!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="btn btn-secondary rounded-end" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+              onclick="location.href=('category.html');">VÝPRODEJ</li>
+            <div class="dropdown-menu shadow w-100">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>vyprodej</h5>
+                      <div class="card">
+                        <img loading="lazy" src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+
+      <div class="offcanvas-header bg-my-gradient">
+        <img loading="lazy" src="recources/Logos/goodgames-logo.png" class="offcanvas-title img-fluid mx-auto" style="max-width: 60%;"
+          id="offcanvasWithBothOptionsLabel">
+        <button type="button" class="btn-close text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+
+      </div>
+      <div class="offcanvas-body">
+        <h3 class="px-3 text-dark">KATEGORIE</h3>
+        <div class="list-group">
+          <a href="category.html" class="list-group-item list-group-item-action">AKCE BLACK FRIDAY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">EXCLUZIVNÍ</a>
+          <a href="category.html" class="list-group-item list-group-item-action">PLAYSTATION</a>
+          <a href="category.html" class="list-group-item list-group-item-action">XBOX</a>
+          <a href="category.html" class="list-group-item list-group-item-action">NINTENDO</a>
+          <a href="category.html" class="list-group-item list-group-item-action">STEAM</a>
+          <a href="category.html" class="list-group-item list-group-item-action">SBĚRATELSKÉ EDICE</a>
+          <a href="category.html" class="list-group-item list-group-item-action">SPOLEČENSKÉ HRY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">NOVINKY</a>
+          <a href="category.html" class="list-group-item list-group-item-action">MERCHANDISE</a>
+          <a href="category.html" class="list-group-item list-group-item-action" aria-current="true">VÝPRODEJ</a>
+        </div>
+        <ul class="btn-group-vertical pb-2" hidden role="group" id="overflow"></ul>
+
+      </div>
+      <section class="d-flex justify-content-between p-4 bg-my-gradient">
+        <div class="me-5">
+          <span>Spojte se s námi na sociálních sítích</span>
+        </div>
+        <div>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="" class="text-white text-decoration-none me-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-xxl text-dark border-start border-end">
+      <ol class="breadcrumb p-2 border-bottom">
+        <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house-fill"></i></a></li>
+        <li class="breadcrumb-item"><a href="category.html">Nintendo</a></li>
+        <li class="breadcrumb-item"><a href="category.html">Nintendo Switch</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Kirby's Return to Dream Land Deluxe Edition (Switch)</li>
+      </ol>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 order-md-1 order-2 pb-3">
+            <div id="my-carousel" class="owl-carousel">
+              <div class="item">
+                <img loading="lazy" src="recources/gamesplash/KIRBY'S RETURN TO DREAM LAND.webp" alt="" data-bs-toggle="modal" data-bs-target="#img1"/>
+              </div>
+              <div class="item">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/C1NI100501-600-600.webp" alt=""  />
+              </div>
+              <div class="item">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/D1NI100501-600-600.webp" alt="" />
+              </div>
+              <div class="item">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/E1NI100501-600-600.webp" alt="" />
+              </div>
+              <div class="item">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/F1NI100501-600-600.webp" alt="" />
+              </div>
+              <div class="item">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/G1NI100501-600-600.webp" alt="" />
+              </div>
+              <div class="item">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/H1NI100501-600-600.webp" alt="" />
+              </div>
+            </div>
+            <div class="navigation-img-wrapper d-lg-block d-none">
+              <div class="owl-carousel" id="carouselSelector">
+                <img loading="lazy" src="recources/gamesplash/KIRBY'S RETURN TO DREAM LAND.webp"
+                  class="img-fluid navigator w-100 border" data-item="0">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/C1NI100501-600-600.webp"
+                  class="img-fluid navigator w-100 border" data-item="1">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/D1NI100501-600-600.webp"
+                  class="img-fluid navigator w-100 border" data-item="2">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/E1NI100501-600-600.webp"
+                  class="img-fluid navigator w-100 border" data-item="3">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/F1NI100501-600-600.webp"
+                  class="img-fluid navigator w-100 border" data-item="4">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/G1NI100501-600-600.webp"
+                  class="img-fluid navigator w-100 border" data-item="5">
+                <img loading="lazy" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/H1NI100501-600-600.webp"
+                  class="img-fluid navigator w-100 border" data-item="6">
+              </div>
+            </div>
+            <div class="modal fade" id="img1" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-body text-center">
+                    <img loading="lazy" src="recources/gamesplash/KIRBY'S RETURN TO DREAM LAND.webp" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-lg btn-myred" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SHOWS ON PHONE-->
+          <div class="col-12 col-md-6 order-md-2 order-1 d-md-none d-block">
+            <h1 class="text-center text-dark">KIRBY'S RETURN TO DREAM LAND DELUXE EDITION (SWITCH)</h1>
+            <span class="badge bg-secondary">New</span>
+            <span class="badge bg-success">Skladem</span>
+          </div>
+          <div class="col-12 col-md-6 order-md-3 order-3 d-md-none d-block pb-3">
+            <div class="row">
+              <span class="text-muted">1 239 Kč bez DPH</span>
+              <h3 id="entry_price" class="fw-bold text-start">1499 Kč</h3>
+              <div class="btn-group">
+                <a href="./cart.html" class="btn btn-success btn-myred col-10 py-3"><i class="bi bi-cart-plus"></i> Do
+                  košíku</a>
+                <button class="btn btn-secondary col-2"><i class="bi bi-bookmark-plus"></i></button>
+              </div>
+            </div>
+            <div class="border-bottom py-3 pb-2">
+              <p><span class="text-truncate-5">Hra pro Nintendo Switch - Kirby's Return to Dream Land Deluxe je novou
+                  verzí hry Kirby's Adventure Wii, která už brzy dorazí na Nintendo Switch. Až se čtyři hráči se mohou
+                  připojit ke Kirbymu a jeho přátelům na cestě skrz Dream Land, aby pomohli opravit Magolorovi jeho
+                  porouchanou vesmírnou loď. <a href="#nav-home">Další informace</a></span></p>
+            </div>
+            <div class="border-bottom py-3 pb-2">
+              <p class="productInfo-item">Kód: 157473</p>
+              <p class="productInfo-item">P/N: NSS378</p>
+              <p class="productInfo-item">
+                Výrobce: <a href="/category.html">Nintendo</a>
+              </p>
+              <p class="productInfo-item">
+                Typ produktu: <a href="/category.html">Hry pro Nintendo Switch</a>
+              </p>
+            </div>
+          </div>
+          <!-- SHOWS ON BIGASS SCREEN-->
+          <div class="col-12 col-md-6 order-md-2 order-1 d-md-block d-none">
+            <div class="border-bottom pb-3">
+              <h1>KIRBY'S RETURN TO DREAM LAND DELUXE EDITION (SWITCH)</h1>
+              <span class="badge bg-secondary">New</span>
+              <span class="badge bg-success">Skladem</span>
+            </div>
+            <div class="d-md-block d-none pt-2">
+              <div class="border-bottom pb-2">
+                <span class="text-muted">1 239 Kč bez DPH</span>
+                <h3 id="entry_price" class="fw-bold text-start">1499 Kč</h3>
+                <a href="./cart.html" class="btn btn-success btn-myred px-5"><i class="bi bi-cart-plus"></i> Do
+                  košíku</a>
+                <button class="btn btn-secondary"><i class="bi bi-bookmark-plus"></i></button>
+              </div>
+              <div class="border-bottom py-3 pb-2">
+                <p><span class="text-truncate-5">Hra pro Nintendo Switch - Kirby's Return to Dream Land Deluxe je novou
+                    verzí hry Kirby's Adventure Wii, která už brzy dorazí na Nintendo Switch. Až se čtyři hráči se mohou
+                    připojit ke Kirbymu a jeho přátelům na cestě skrz Dream Land, aby pomohli opravit Magolorovi jeho
+                    porouchanou vesmírnou loď. <a href="#nav-home">Další informace</a></span></p>
+              </div>
+              <div class="border-bottom py-3 pb-2">
+                <p class="productInfo-item">Kód: 157473</p>
+                <p class="productInfo-item">P/N: NSS378</p>
+                <p class="productInfo-item">
+                  Výrobce: <a href="/category.html">Nintendo</a>
+                </p>
+                <p class="productInfo-item">
+                  Typ produktu: <a href="/category.html">Hry pro Nintendo Switch</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-xs-12">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active mx-auto text-center" id="nav-home-tab" data-bs-toggle="tab"
+                data-bs-target="#nav-home" role="tab" aria-selected="true">Popis</a>
+              <a class="nav-item nav-link mx-auto text-center" id="nav-profile-tab" data-bs-toggle="tab" role="tab"
+                data-bs-target="#nav-profile" aria-selected="true">Hodnocení</a>
+            </div>
+          </nav>
+          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active px-2" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="row">
+                <div class="col-12 col-md-8 py-3">
+                  <h3 class="fw-bold px-1">KIRBY'S RETURN TO DREAM LAND DELUXE EDITION (SWITCH)</h3>
+                  <div class="px-5">
+                    <div class="text-center py-3">
+                      <img loading="lazy" class="img-fluid rounded" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/logo.png"
+                        alt="" style="max-width: 60%;">
+                    </div>
+                    <p>Kromě meče, biče a dalších známých kopírovacích schopností zažije svou premiéru i schopnost s
+                      příznačným názvem Mecha. Staň se robotem a létej po obloze, útoč ze zálohy díky svému kanónu nebo
+                      se
+                      pusť do soubojů na blízko se silnými údery. Rovněž můžeš vdechnout svítící nepřátele a využít tak
+                      speciální super schopnosti – ultra silné kopírovací schopnosti, které převrátí jazýčky na vahách
+                      ve
+                      tvůj prospěch!</p>
+                    <div class="text-center py-3">
+                      <img loading="lazy" class="img-fluid rounded" src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/art.jpg"
+                        alt="">
+                    </div>
+                    <hr class="py-2">
+                    <h4>Společné dobrodružství!</h4>
+                    <p>Hraj s ostatními hráči díky ovladači Joy-Con, kdy až čtyři hráči na jedné konzoli se mohou
+                      zapojit
+                      do hraní. Hraj za známé postavy jako Kirby, Meta Knight, King Dedede či Bandana Waddle Dee.
+                      Případně
+                      může hrát každý za Kirbyho, kdy přijdou na řadu všechny jeho kopírovací schopnosti.
+                    </p>
+                    <div class="text-center py-3">
+                      <img loading="lazy" class="img-fluid rounded w-100"
+                        src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/imageedit_4_8969257162.png" alt="">
+                    </div>
+                    <h4>Užij si celou řadu miniher!</h4>
+                    <p>Odpočiň si od velkolepého dobrodružství v rámci spousty miniher, které jsou hratelné až ve
+                      čtyřech hráčích. Ti, kteří hráli původní hru, určitě poznají Ninja Dojo a Samurai Kirby, nicméně i
+                      pro ně bude nová minihra s názvem Magolor’s Tome Trackers.</p>
+                    <div class="text-center py-3">
+                      <img loading="lazy" class="img-fluid rounded w-100"
+                        src="recources/imagecarousel/KIRBY'S RETURN TO DREAM LAND/imageedit_6_5136064423.jpg" alt="">
+                    </div>
+                  </div>
+                  <hr class="d-block d-lg-none">
+                </div>
+                <div class="col-12 col-md-4 py-3 px-3">
+                  <h4>Technické parametry</h4>
+                  <div class="accordion my-3" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne">
+                          <strong class="fs-5">Technické parametry</strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Typ licence:
+                            </div>
+                            <div class="col text-end">
+                              Krabicová
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseTwo">
+                          <strong class="fs-5">Další informace</strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Platforma:
+                            </div>
+                            <div class="col text-end">
+                              Nintendo Switch
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Počet hráčů:
+                            </div>
+                            <div class="col text-end">
+                              Pro jednoho
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              PEGI:
+                            </div>
+                            <div class="col text-end">
+                              PEGI 7
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Žánr:
+                            </div>
+                            <div class="col text-end">
+                              Adventura
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Edice:
+                            </div>
+                            <div class="col text-end">
+                              Deluxe Edition
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Česká lokalizace:
+                            </div>
+                            <div class="col text-end">
+                              Ne
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Český dabing:
+                            </div>
+                            <div class="col text-end">
+                              Ne
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Výrobce gaming:
+                            </div>
+                            <div class="col text-end">
+                              Nintendo
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Vydavatel gaming:
+                            </div>
+                            <div class="col text-end">
+                              Nintendo
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Typ distribuce:
+                            </div>
+                            <div class="col text-end">
+                              Krabicová
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-start fw-bold">
+                              Stav zboží:
+                            </div>
+                            <div class="col text-end">
+                              Nový
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseThree">
+                          <strong class="fs-5">Záruky</strong>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          <div class="row">
+                            <div class="col-9 text-start fw-bold">
+                              Délka záruky v měsících:
+                            </div>
+                            <div class="col-3 text-end">
+                              24
+                            </div>
+                            <div class="col-9 text-start fw-bold">
+                              Délka záruky v měsících pro IČO:
+                            </div>
+                            <div class="col-3 text-end">
+                              12
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-my-gradient my-3 rounded">
+                    <h4 class="text-light pt-3 px-3">Další informace</h4>
+                    <div class="row-1 pb-3 px-3 text-light">
+                      <div class="col text-start">
+                        <span class="fw-bold">Objednací kód:</span> 157473
+                      </div>
+                      <div class="col text-start">
+                        <span class="fw-bold">Produktové číslo:</span> NSS378
+                      </div>
+                      <div class="col text-start">
+                        <span class="fw-bold">EAN:</span> 045496478643
+                      </div>
+                      <div class="col text-start">
+                        <span class="fw-bold">Záruka v měsících:</span> 24
+                      </div>
+                      <div class="col text-start">
+                        <span class="fw-bold">Záruka pro firmy v měsících:</span> 12
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade px-2" id="nav-profile" role="tabpanel">
+              <h3 class="text-center fw-bold pt-3 pb-1">Uživatelské hodnocení Kirby's Return to Dream Land Deluxe
+                Edition (Switch)</h3>
+              <div class="row">
+                <div class="col-12 col-md-8 order-md-1 order-2 py-4">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-12">
+                      <div class="card text-dark">
+                        <div class="card-body p-4">
+                          <div class="d-flex flex-start">
+                            <img loading="lazy" class="rounded-circle shadow-1-strong me-3"
+                              src="https://media.istockphoto.com/id/587805156/cs/vektor/vektorová-ilustrace-profilového-obrázku.jpg?s=612x612&w=0&k=20&c=fG5L0T9uXiCua6BHQDaDpWWaVMa83K6BJfAGWps0gv4="
+                              alt="avatar" width="60" height="60" />
+                            <div>
+                              <h6 class="fw-bold mb-1">Martin Vysloužil</h6>
+                              <div class="d-flex align-items-center mb-3">
+                                <p class="mb-0">
+                                  7. Prosince 2022
+                                  <span class="badge bg-danger ms-2">Nedoporučuje</span>
+                                </p>
+                                <a href="#!" class="link-muted ps-2"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                                <a href="#!" class="link-muted ps-1"><i class="bi bi-arrow-down-circle-fill"></i></a>
+                              </div>
+                              <p class="mb-0">
+                                <img loading="lazy" src="https://media.tenor.com/qcKDevbWhqAAAAAC/kirby-kirby-cooked.gif" class="img-fluid rounded">
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <hr class="my-0" style="height: 1px;" />
+                        <div class="card-body p-4">
+                          <div class="d-flex flex-start">
+                            <img loading="lazy" class="rounded-circle shadow-1-strong me-3"
+                              src="https://media.istockphoto.com/id/587805156/cs/vektor/vektorová-ilustrace-profilového-obrázku.jpg?s=612x612&w=0&k=20&c=fG5L0T9uXiCua6BHQDaDpWWaVMa83K6BJfAGWps0gv4="
+                              alt="avatar" width="60" height="60" />
+                            <div>
+                              <h6 class="fw-bold mb-1">ČervenýHrníček48</h6>
+                              <div class="d-flex align-items-center mb-3">
+                                <p class="mb-0">
+                                  30. Listopadu 2022<span class="badge bg-success ms-2">Doporučuje</span>
+                                </p>
+                                <a href="#!" class="link-muted ps-2"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                                <a href="#!" class="link-muted ps-1"><i class="bi bi-arrow-down-circle-fill"></i></a>
+                              </div>
+                              <p class="mb-0">
+                                10/10 hned bych si dal kirbyho znova
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 order-md-2 order-1 py-4">
+
+                  <div class="card">
+                    <div class="card-body p-4">
+                      <div class="d-flex flex-start w-100">
+                        <img loading="lazy" class="rounded-circle shadow-1-strong me-3"
+                          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(21).webp" alt="avatar" width="65"
+                          height="65" />
+                        <div class="w-100">
+                          <h4 class="">Přidejte vlastní hodnocení</h4>
+                          <ul class="d-block mb-3" style="list-style-type: none;">
+                            <li>
+                              <i class="bi bi-star bi-sm text-my-gradient" title="hrozné"></i>
+                              <i class="bi bi-star bi-sm text-my-gradient" title="špatné"></i>
+                              <i class="bi bi-star bi-sm text-my-gradient" title="neutrální"></i>
+                              <i class="bi bi-star bi-sm text-my-gradient" title="dobré"></i>
+                              <i class="bi bi-star bi-sm text-my-gradient" title="výborné"></i>
+                            </li>
+                          </ul>
+
+                        </div>
+                        
+                      </div>
+                      <div class="w-100">
+                        <div class="form-outline">
+                          <textarea class="form-control" id="textAreaExample" rows="5"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                          <button type="button" class="btn btn-danger px-4"><i class="bi bi-backspace-fill"></i> Zahodit</button>
+                          <button type="button" class="btn bg-my-gradient px-4 text-light">Odeslat <i
+                              class="bi bi-arrow-right-circle-fill"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </main>
+
+
+
+
+  <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+    <section class="d-flex justify-content-between p-4 bg-my-gradient">
+      <div class="me-5">
+        <span>Spojte se s námi na sociálních sítích</span>
+      </div>
+      <div>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="text-white text-decoration-none me-3">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <img loading="lazy" src="/recources/Logos/goodgames-logo.png" class="img-fluid">
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Kategorie</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p>
+              <a href="#!" class="text-white">Playstation</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Xbox</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Nintendo</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Steam</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold">Užitečné odkazy</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p>
+              <a href="#!" class="text-white">Profil</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Košík</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Prodejny</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">About us</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold">Kontakt</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 70px; height: 2px" />
+            <p><i class="bi bi-house mr-3"></i> Isisford QLD 4731, Austrálie</p>
+            <p><i class="bi bi-envelope mr-3"></i> GoodGames@yahoo.gg</p>
+            <p><i class="bi bi-phone mr-3"></i> +420 724 996 714</p>
+            <p><i class="bi bi-printer-fill mr-3"></i> +420 603 123 456</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <li class="btn btn-secondary" id="more" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+    aria-controls="offcanvasWithBothOptions" style="list-style-type: none; display: none;"><i
+      class="nav-link bi bi-three-dots"></i></li>
+  <!-- ... button for xpand in nav-->
+  <script src="js/overflow.js"></script>
+  <script src="js/owl-carousel.js"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/dark-mode-switch/dark-mode-switch.js"></script>
+  <link href="./node_modules/dark-mode-switch/dark-mode.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./styl.css" rel="stylesheet">
+</body>
+
+</html>
